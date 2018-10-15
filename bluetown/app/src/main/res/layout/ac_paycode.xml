@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_blue"
+    android:orientation="vertical" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:background="@color/white"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/paycode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/margin_10"
+            android:drawableTop="@drawable/paycode_icon_1"
+            android:gravity="center"
+            android:text="@string/QR"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/core"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/margin_10"
+            android:drawableTop="@drawable/paycode_icon_2"
+            android:gravity="center"
+            android:text="@string/saoyisao"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

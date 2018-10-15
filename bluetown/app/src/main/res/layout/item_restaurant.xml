@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp" >
+
+    <ImageView
+        android:id="@+id/iv_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:minHeight="@dimen/margin_60"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_msg_empty" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10" >
+
+        <TextView
+            android:id="@+id/tv_restaurant_name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_60"
+            android:layout_weight="1.0"
+            android:text="ddddddddddddddd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_meter_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.android.bluetown.view.RoundedImageView
+        android:id="@+id/civ_restaurant_logo"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:background="@drawable/white_circle_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="2dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_msg_empty" />
+
+</FrameLayout>

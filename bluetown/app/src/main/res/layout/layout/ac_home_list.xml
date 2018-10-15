@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <ImageView 
+        android:id="@+id/img_top"
+       android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/home_bg" />
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <com.android.bluetown.view.RoundedImageView
+                android:id="@+id/touxing"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_msg_empty" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableLeft="@drawable/img_home_weizhi"
+                android:text="123456"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/puls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15"
+                android:src="@drawable/puls" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:id="@+id/saoma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableTop="@drawable/home_saoma"
+                android:gravity="center"
+                android:text="扫一扫"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/paycode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableTop="@drawable/home_paycode"
+                android:gravity="center"
+                android:text="付款码"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/passcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableTop="@drawable/home_passcode"
+                android:gravity="center"
+                android:text="通行码"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+   <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/actionCenterList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/white"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+</com.ab.view.pullview.AbPullToRefreshView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false"><shape android:shape="oval">
+         <corners android:radius="360dp" />
+            <!-- solid中定义的颜色值需要包含alpha值 -->
+            <solid android:color="@color/red_btn_bg_color" />
+        </shape></item>
+
+</selector>

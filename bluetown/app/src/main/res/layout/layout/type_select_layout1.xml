@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/compnay_show_type_tag_stroke" />
+
+    <me.next.tagview.TagCloudView
+        android:id="@+id/tag_cloud_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tcvBackground="@color/white"
+        app:tcvBorder="8dp"
+        app:tcvCanTagClick="false"
+        app:tcvItemBorderHorizontal="5dp"
+        app:tcvItemBorderVertical="6dp"
+        app:tcvSingleLine="false"
+        app:tcvTagResId="@layout/item_type_tag_style"
+        app:tcvTextColor="@color/compnay_show_type_tag_text_bg" />
+
+    <LinearLayout
+        android:id="@+id/typeBlankLy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_bg"
+        android:orientation="vertical" />
+
+</LinearLayout>

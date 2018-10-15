@@ -1,0 +1,19 @@
+<com.ab.view.pullview.AbPullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPullRefreshView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <com.android.bluetown.view.HeaderGridView
+        android:id="@+id/publishproductGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/margin_5"
+        android:listSelector="@color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/margin_5" 
+        android:background="@color/white"
+        />
+
+</com.ab.view.pullview.AbPullToRefreshView>

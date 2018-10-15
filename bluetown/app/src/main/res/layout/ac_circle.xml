@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ab.view.pullview.AbPullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPullRefreshView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <ListView
+        android:id="@+id/circleList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/compnay_detail_divier"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" 
+        android:listSelector="@color/transparent"
+       />
+
+</com.ab.view.pullview.AbPullToRefreshView>

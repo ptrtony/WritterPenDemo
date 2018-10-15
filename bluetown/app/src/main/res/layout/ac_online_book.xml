@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:orientation="vertical"
+        android:scrollbars="none" 
+        android:layout_marginBottom="@dimen/margin_60">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/bt_onlineserver_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_merchant"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_line_desk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_table"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_line_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_clock"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_line_time_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/two_line_white_bg"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableRight="@drawable/arrow_left"
+                android:hint="@string/select_dinner_time"
+                android:padding="@dimen/margin_10"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/rl_onlineserver_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_onlineserve_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/white_stroke_bg"
+                        android:hint="@string/name_hint"
+                        android:padding="@dimen/margin_10"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <RadioGroup
+                        android:id="@+id/mrg_onlinerserve"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rb_onlineserve_women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/gender_check_normal"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:text="@string/sex_women"
+                            android:textColor="@color/compnay_show_type_tag_text_bg"
+                            android:textSize="@dimen/font_size_14" />
+
+                        <RadioButton
+                            android:id="@+id/rb_onlineserve_men"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/gender_check_normal"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:text="@string/sex_man"
+                            android:textColor="@color/compnay_show_type_tag_text_bg"
+                            android:textSize="@dimen/font_size_14" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_onlineserve_phones"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_stroke_bg"
+                    android:hint="@string/linkmethod_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="@dimen/margin_10"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <EditText
+                    android:id="@+id/et_onlineserve_teshumust"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_stroke_bg"
+                    android:hint="@string/special_request_hint"
+                    android:maxLength="30"
+                    android:padding="@dimen/margin_10"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bt_onlineserver_fenshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_10"
+                    android:text="预定点菜（4份）"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <com.android.bluetown.view.ListViewForScrollView
+                    android:id="@+id/lv_onlineserver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/two_line_white_bg"
+                    android:divider="@android:color/transparent"
+                    android:listSelector="@android:color/transparent" >
+                </com.android.bluetown.view.ListViewForScrollView>
+
+                <TextView
+                    android:id="@+id/tv_continue_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/arrow_left"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/continue_order"
+                    android:textColor="@color/title_bg_blue"
+                    android:textSize="@dimen/font_size_14"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_onlinesss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/white_stroke_bg"
+                android:padding="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/tv_jinggao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_attention"
+                    android:text="@string/please_notice"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="@dimen/font_size_12" />
+
+                <Button
+                    android:id="@+id/bt_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_jinggao"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dinner_tip_1"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <Button
+                    android:id="@+id/bt_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_three"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dinner_tip_2"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <Button
+                    android:id="@+id/bt_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_one"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dinner_tip_3"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/two_line_white_bg"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/tv_online_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange_darker_color"
+            android:textSize="@dimen/font_size_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_online_original_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_16"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_online_total"
+            android:layout_marginLeft="15dp"/>
+        <Button
+            android:id="@+id/bt_onlinerserver_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/blue_darker_btn_bg"
+            android:text="@string/pay_deposit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

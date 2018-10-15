@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ac_recommend_dish">
+
+    <LinearLayout
+        android:id="@+id/layout_seat_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10"
+        android:layout_above="@+id/tv_discount_remind">
+
+            <TextView
+                android:id="@+id/toast_table_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_table"
+                android:drawablePadding="2dip"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="小人桌子（4-6）"
+                android:textColor="@color/compnay_show_type_tag_text_bg"
+                android:textSize="@dimen/font_size_14"
+                android:layout_weight="3.0" />
+
+            <TextView
+                android:id="@+id/toast_table_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:drawableLeft="@drawable/ic_clock"
+                android:drawablePadding="2dip"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="2015-20-24 星期三 24:00"
+                android:textColor="@color/compnay_show_type_tag_text_bg"
+                android:textSize="@dimen/font_size_14" 
+                android:layout_weight="4.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="请选择菜品"
+            android:layout_weight="3.0" 
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_seat_title"
+        android:layout_marginBottom="@dimen/margin_50" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/invite_friend_title_color"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bt_classone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#E5E4E2"
+                android:text="@string/classify"
+                android:textColor="@color/font_dark_gay"
+                android:textSize="@dimen/font_size_16" />
+
+            <ListView
+                android:id="@+id/dishClassifyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_divider_color3"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="#E5E4E2"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/dishTotalCount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/canteen_type_seleted_color"
+                android:gravity="center"
+                android:textColor="@color/font_dark_gay"
+                android:textSize="@dimen/font_size_16" />
+
+            <ListView
+                android:id="@+id/selectDishContentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="@dimen/margin_10"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_discount_remind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:background="#80FEFBD6"
+        android:paddingLeft="@dimen/x50"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_14"
+        android:layout_above="@+id/mainOrderShopLy"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/mainOrderShopLy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_dark_gray"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/cart_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/shopCard"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_shopping_cart"
+                android:layout_centerVertical="true"/>
+
+            <com.android.bluetown.view.AdaptionSizeTextView
+                android:id="@+id/dishCount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_red_dish"
+                android:layout_toRightOf="@+id/shopCard"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12"
+                android:layout_marginLeft="-6dp"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/x2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/originalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="原价：￥0.00元"
+                    android:textColor="#80ffffff"
+                    android:textSize="@dimen/font_size_14"
+                    android:layout_toRightOf="@+id/currentprice"
+                    android:layout_marginRight="@dimen/x24"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/currentprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="现价：￥0.00元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/seletedOk"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/blue_darker_btn_bg"
+                android:text="@string/select_ok"              
+                android:textColor="@color/white"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/sleep"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:background="@drawable/gray_darker_btn_bg"
+                android:text="商家暂停营业"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

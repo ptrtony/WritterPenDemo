@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.bluetown.listview.XListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/approvalList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_bg"
+    android:cacheColorHint="@color/transparent"
+    android:divider="@null"
+    android:dividerHeight="0dp"
+    android:fadingEdge="none"
+    android:listSelector="@color/transparent"
+    android:scrollbars="none" >
+
+</com.android.bluetown.listview.XListView>

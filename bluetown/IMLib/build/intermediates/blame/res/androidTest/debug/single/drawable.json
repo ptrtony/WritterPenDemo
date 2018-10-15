@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\drawable\\notification_tile_bg.xml"
+    }
+]

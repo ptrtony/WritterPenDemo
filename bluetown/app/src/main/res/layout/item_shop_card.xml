@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_dialog_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="巴蜀牛肉噢噢噢噢噢噢噢"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_16"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <ImageView
+            android:id="@+id/iv_dialog_jian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_mini_red"
+            android:layout_marginRight="@dimen/margin_10"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/tv_dialog_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+         	android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_16"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/iv_diaog_jia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_add_red"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_price"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:text="30.00元"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_16"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+             />
+
+        <ImageView
+            android:id="@+id/iv_dialog_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/ic_delete_red" 
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

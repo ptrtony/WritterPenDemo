@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wendu.webviewjavascriptbridge.WVJBWebView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/guest_appointment_web"
+    android:fitsSystemWindows="true"
+    tools:context="com.android.bluetown.home.main.model.act.GuestAppointmentCarSeatActivity">
+</wendu.webviewjavascriptbridge.WVJBWebView>

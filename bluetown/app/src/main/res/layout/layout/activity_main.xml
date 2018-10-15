@@ -1,0 +1,193 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_content_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.00" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <!-- <ImageView
+            style="@style/iv_common_cutoff"
+            android:contentDescription="@null" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout_main_nav_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_5"
+                android:layout_weight="1.0"
+                android:orientation="vertical" 
+                
+                 >
+
+                <ImageView
+                    android:id="@+id/iv_main_nav_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:padding="0dip"
+                    android:src="@drawable/iv_main_bottom_navigation_home_press"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_main_nav_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_main_nav_home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/home"
+                    android:textColor="@color/title_bg_blue"
+                    android:textSize="@dimen/font_size_14" 
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_nav_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="@dimen/margin_5"
+                android:orientation="vertical" 
+                
+                  >
+
+                <ImageView
+                    android:id="@+id/iv_main_nav_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/iv_main_bottom_navigation_surround_normal" />
+
+                <TextView
+                    android:id="@+id/tv_main_nav_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_main_nav_game"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/surround_text"
+                    android:textColor="@color/main_content_text"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <!-- <RelativeLayout
+                android:id="@+id/layout_main_nav_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" 
+               
+                >
+
+                <ImageView
+                    android:id="@+id/iv_main_nav_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/iv_main_bottom_navigation_find_normal" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_main_nav_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_main_nav_find"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/find"
+                    android:textColor="@color/main_content_text"
+                    android:textSize="@dimen/font_size_14" 
+                    />
+                
+            </RelativeLayout> -->
+
+            <RelativeLayout
+                android:id="@+id/layout_main_nav_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="@dimen/margin_5"
+                android:orientation="vertical" 
+                
+                  >
+
+                <ImageView
+                    android:id="@+id/iv_main_nav_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/iv_main_bottom_navigation_circle_normal" />
+
+                <TextView
+                    android:id="@+id/tv_main_nav_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_main_nav_personal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/my_3yx"
+                    android:textColor="@color/main_content_text"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_nav_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="@dimen/margin_5"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_main_nav_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/iv_main_bottom_navigation_mine_normal" />
+
+                <TextView
+                    android:id="@+id/tv_main_nav_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_main_nav_setting"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/setting"
+                    android:textColor="@color/main_content_text"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

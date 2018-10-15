@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color" >
+
+    <ImageView
+        android:id="@+id/rl_money_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_center"
+        android:layout_alignLeft="@+id/tv_center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:src="@drawable/ic_pay_success" />
+
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="@string/pay_success_tip"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/xixi"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_16" />
+
+    <Button
+        android:id="@+id/bt_onlinepay_rever"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/blue_darker_btn_bg"
+        android:text="@string/book_orderlist"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18" />
+
+</RelativeLayout>

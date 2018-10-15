@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/groupInfoLy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10" >
+
+            <ImageView
+                android:id="@+id/groupImg"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_msg_empty" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/groupImg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/groupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登山群"
+                    android:textColor="@color/font_gray" />
+
+                <TextView
+                    android:id="@+id/groupNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="123456"
+                    android:textColor="@color/font_gray" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/groupPersonCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="838人"
+                android:textColor="@color/font_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/groupMasterLy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10" >
+
+            <ImageView
+                android:id="@+id/groupMasterImg"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_msg_empty" />
+
+            <TextView
+                android:id="@+id/groupNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/groupMasterImg"
+                android:text="飞奔的蜗牛"
+                android:textColor="@color/font_gray" />
+
+            <TextView
+                android:id="@+id/groupMaterNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="群主"
+                android:textColor="@color/font_gray" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/joinGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/orange_no_radius_btn_bg"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

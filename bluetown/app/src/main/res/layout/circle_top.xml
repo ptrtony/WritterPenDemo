@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <com.android.bluetown.view.slideview.SlidingPlayViewWithDot
+        android:id="@+id/slidePlayView"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:drawableLeft="@drawable/ic_mark"
+        android:drawablePadding="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:gravity="center_vertical"
+        android:text="@string/recommend_circle"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/title_font_size_16"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/compnay_detail_divier" />
+
+</LinearLayout>

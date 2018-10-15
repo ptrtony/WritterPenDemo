@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMLib/IMLib.iml" filepath="$PROJECT_DIR$/IMLib/IMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetown.iml" filepath="$PROJECT_DIR$/bluetown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_base_library/circle_base_library.iml" filepath="$PROJECT_DIR$/circle_base_library/circle_base_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_base_ui/circle_base_ui.iml" filepath="$PROJECT_DIR$/circle_base_ui/circle_base_ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_photoview/circle_photoview.iml" filepath="$PROJECT_DIR$/circle_photoview/circle_photoview.iml" />
+    </modules>
+  </component>
+</project>

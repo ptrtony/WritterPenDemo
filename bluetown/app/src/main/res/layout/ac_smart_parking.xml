@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.android.bluetown.view.ListViewForScrollView
+            android:id="@+id/parkNoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/app_bg_color"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </com.android.bluetown.view.ListViewForScrollView>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+    
+
+</RelativeLayout>

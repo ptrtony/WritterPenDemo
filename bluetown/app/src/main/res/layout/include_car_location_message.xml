@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="16dp">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_car_location_message">
+        <TextView
+            android:id="@+id/tv_car_no_number"
+            style="@style/homeCarMessageText"
+            android:text="sdfsdfasdf"/>
+
+        <TextView
+            android:id="@+id/tv_car_intime"
+            style="@style/homeCarMessageText"
+            android:layout_alignParentRight="true"
+            android:text="sdfasdfsadf"/>
+        <!--<TextView-->
+            <!--android:id="@+id/tv_car_name_and_number"-->
+            <!--style="@style/homeCarMessageText"-->
+            <!--android:layout_below="@+id/tv_car_no_number"-->
+            <!--android:text="asdfasdfasdf"/>-->
+        <TextView
+            android:id="@+id/tv_start_time"
+            style="@style/homeCarMessageText"
+            android:layout_below="@+id/tv_car_no_number"
+            android:text="sdfasdfsdfasdf"/>
+        <TextView
+            android:id="@+id/tv_end_time"
+            style="@style/homeCarMessageText"
+            android:layout_below="@+id/tv_car_no_number"
+            android:layout_alignParentRight="true"
+            android:text="sfasdfasdfasdf"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/tv_start_time"
+            android:background="#40ffffff"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:id="@+id/tv_charge_status"
+                style="@style/homeCarMessageText"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tv_plan_time"
+                style="@style/homeCarMessageText"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+

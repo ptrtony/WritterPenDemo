@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_area"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.bluetown.home.hot.model.act.SelectAreaActivity"
+    android:background="@color/app_blue">
+    <View
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <RelativeLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/view_status_bar">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"/>
+    </RelativeLayout>
+    <com.android.bluetown.view.ResizableImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/ll_toolbar"
+        android:src="@drawable/park_map"/>
+</RelativeLayout>

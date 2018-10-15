@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_10" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <com.android.bluetown.view.RoundedImageView
+            android:id="@+id/truckImage"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/bg_m"
+            android:text="1.1km"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_10" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="@dimen/margin_10"
+            android:drawableLeft="@drawable/ic_tel"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginTop="@dimen/margin_10"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SweetAlertDialog 自定义对话框 -->
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="progressIndeterminate" format="boolean" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="float" />
+        <attr name="barSpinCycleTime" format="integer" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="fillRadius" format="boolean" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <!-- RoundedImageView for custom shape -->
+    <declare-styleable name="RoundedImageView">
+
+        <!-- Specifies whether or not to draw a circular border around the image. -->
+        <attr name="border" format="boolean"></attr>
+        <!-- Specifies the color of the border draw around the image. (if enabled) -->
+        <attr name="border_color" format="color"></attr>
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="border_width" format="dimension"></attr>
+        <!-- Specifies whether or not to draw a selector on this view upon touch events. -->
+        <attr name="selector" format="boolean"></attr>
+        <!-- Specifies the color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="selector_color" format="color"></attr>
+        <!-- Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="selector_stroke_color" format="color"></attr>
+        <!-- Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="selector_stroke_width" format="dimension"></attr>
+        <!-- Specifies whether or not to draw a shadow around your circular image. -->
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="RoundedImageViewStyle">
+        <attr name="RoundedImageViewDefault" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TagCloudView">
+        <attr name="tcvBackground" format="reference" />
+        <attr name="tcvTextColor" format="color" />
+        <attr name="tcvBorder" format="dimension" />
+        <attr name="tcvTextSize" format="dimension" />
+        <attr name="tcvBorderItem" format="dimension" />
+        <attr name="tcvItemBorderVertical" format="dimension" />
+        <attr name="tcvItemBorderHorizontal" format="dimension" />
+        <attr name="tcvSingleLine" format="boolean" />
+        <attr name="tcvShowEndText" format="boolean" />
+        <attr name="tcvShowRightImg" format="boolean" />
+        <attr name="tcvEndText" format="string" />
+        <attr name="tcvRightResId" format="reference" />
+        <attr name="tcvCanTagClick" format="boolean" />
+        <attr name="tcvTagResId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="NumberPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension" />
+        <attr name="noEmpty" format="boolean" />
+        <attr name="isEnable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <!--饼图的进度条-->
+    <declare-styleable name="CircleProgressView">
+        <attr name="inner_circle_size" format="dimension" />
+        <attr name="inner_circle_color" format="color" />
+        <attr name="inner_text_color" format="color" />
+        <attr name="inner_text_size" format="dimension" />
+        <attr name="stroke_margin" format="dimension" />
+        <attr name="stroke_color" format="color" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="current_progress" format="integer" />
+    </declare-styleable>
+
+    <!--圆形头像-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ClickShowMoreLayout">
+        <attr name="show_line" format="integer" />
+        <attr name="click_text" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+    <!--ForceClickImageView-->
+    <declare-styleable name="ForceClickImageView">
+        <attr name="foregroundColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+        <attr name="radius" format="dimension" />ssss
+    </declare-styleable>
+
+
+    <declare-styleable name="SelectedCarPortView">
+
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoDragRelativeLayout">
+        <!-- 动画时长  默认 400 -->
+        <attr name="vdr_anim_duration" format="integer"></attr>
+        <!-- 恢复系数 [0~1] -->
+        <attr name="vdr_restoration_ratio" format="float"></attr>
+        <!-- y轴偏移速率 -->
+        <attr name="vdr_offset_rate_y" format="integer"></attr>
+        <!-- y轴开始偏移系数 -->
+        <attr name="vdr_start_offset_ratio_y" format="float"></attr>
+        <!-- 开始动画是否进入 默认true -->
+        <attr name="vdr_start_anim_enable" format="boolean"></attr>
+        <!-- 是否可以拖拽 默认true -->
+        <attr name="vdr_drag_enable" format="boolean"></attr>
+
+        <!-- 模仿头条获取新增顶部导航栏高度(不包含状态栏的高度) 底部导航栏高度 -->
+        <attr name="vdr_top_nav_height" format="dimension"></attr>
+        <attr name="vdr_bottom_nav_height" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color"/>
+
+        <attr name="dddividerColor" format="color"/>
+
+        <attr name="ddtextSelectedColor" format="color"/>
+
+        <attr name="ddtextUnselectedColor" format="color"/>
+
+        <attr name="ddmenuBackgroundColor" format="color"/>
+
+        <attr name="ddmaskColor" format="color"/>
+
+        <attr name="ddmenuTextSize" format="dimension"/>
+
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+
+        <attr name="ddmenuMenuHeightPercent" format="float"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="NumberCodeView">
+        <attr name="isPassword" format="boolean"/>
+    </declare-styleable>
+
+</resources>

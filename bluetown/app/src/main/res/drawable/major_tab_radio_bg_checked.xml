@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- tab 选中的背景颜色 -->
+
+
+    <!-- 第一层   （ 下面的线） -->
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/title_bg_blue" />
+        </shape>
+    </item>
+
+    <!-- 第二层    （  上面的 ） -->
+    <item android:bottom="3dp">
+        <shape>
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+</layer-list>

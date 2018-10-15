@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/newEventLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etMLCityPoi"
+            android:layout_width="220dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+             android:background="@drawable/et_selected"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/moreEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="0.1"
+            android:background="@drawable/btn_bg_lvse"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <com.android.bluetown.listview.XListView
+        android:id="@+id/companyInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/white"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" >
+    </com.android.bluetown.listview.XListView>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minHeight="@dimen/margin_40"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_10" >
+
+    <TextView
+        android:id="@+id/tv_line_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="巴蜀牛肉噢噢噢噢噢噢噢"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_line_count"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="2"
+        android:paddingLeft="@dimen/margin_20"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_line_price"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/margin_20"
+        android:text="30元"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_14" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/userListRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10"
+        android:gravity="center"
+        android:visibility="gone"
+         >
+
+        <RadioButton
+            android:id="@+id/friendsList"
+            style="@style/radioBtnStyle"
+            android:background="@drawable/index_left_tab_bg"
+            android:text="群组" 
+           />
+
+        <RadioButton
+            android:id="@+id/groupList"
+            style="@style/radioBtnStyle"
+            android:text="好友"
+            android:background="@drawable/index_right_tab_bg"
+            />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/userListRadioGroup" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

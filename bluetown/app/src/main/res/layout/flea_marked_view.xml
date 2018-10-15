@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ab.view.pullview.AbPullToRefreshView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPullRefreshView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <GridView
+        android:id="@+id/productGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/margin_5"
+        android:listSelector="@color/transparent"
+        android:numColumns="2"
+        android:padding="@dimen/margin_10"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/margin_5" />
+</com.ab.view.pullview.AbPullToRefreshView>

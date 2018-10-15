@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_10"
+    android:paddingRight="@dimen/margin_10" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/deal_service_line_left" />
+
+        <ImageView
+            android:id="@+id/itemDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/time_dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/deal_service_line_left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/zoneInnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zone_name_title"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/approvalStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/pass"
+                android:textColor="@color/font_orange"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/approvalDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/deal_with_date"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/approvalContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/zone_approva_content"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/approvalRefuseContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/zone_approva_refuse_content"
+            android:textColor="@color/font_light_blue"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+</LinearLayout>

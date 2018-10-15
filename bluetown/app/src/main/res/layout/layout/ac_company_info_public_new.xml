@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/demandTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="@string/title_hint"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_size_14" 
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/compnay_detail_divier" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.android.bluetown.view.NoScrollGridView
+            android:id="@+id/showDemandImgGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/margin_5"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/margin_5"
+            android:padding="@dimen/margin_10"
+            android:background="@color/white"
+             >
+        </com.android.bluetown.view.NoScrollGridView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:text="@string/demand_type"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_14"
+            android:background="@color/white" />
+
+        <com.android.bluetown.view.NoScrollGridView
+            android:id="@+id/showDemandTypeGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:background="@color/white" >
+        </com.android.bluetown.view.NoScrollGridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_40"
+                android:gravity="center_vertical"
+                android:text="@string/demand_deadline"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/demandDeadlineDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/date_ac_guest_appoint"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/demandDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/demand_content_hint"
+            android:minHeight="150dip"
+            android:padding="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14"
+             />
+
+        <Button
+            android:id="@+id/demandCommit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/blue_darker_btn_bg"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16"
+            android:layout_margin="@dimen/margin_10" />
+    </LinearLayout>
+
+</ScrollView>

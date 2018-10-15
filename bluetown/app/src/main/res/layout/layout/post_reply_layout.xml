@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/followPostLy"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+     >
+
+    <EditText
+        android:id="@+id/replyContent"
+        android:layout_width="0dip"
+        android:layout_height="40dip"
+        android:layout_weight="0.8"
+        android:background="@drawable/white_stroke_bg"
+        android:hint="@string/reply_hint" 
+        android:paddingLeft="@dimen/margin_5"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_12"
+        android:gravity="left|center_vertical"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"/>
+
+    <Button
+        android:id="@+id/replyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_weight="0.1"
+        android:background="@drawable/orange_btn_bg"
+        android:text="@string/follow_post" 
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14"
+        android:layout_marginRight="@dimen/margin_10"/>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/white" >
+
+        <com.android.bluetown.view.PointBannerView
+            android:id="@+id/item_dish_banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/item_dish_banner_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_close" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_dark_gray1"
+            android:focusable="false" >
+
+            <TextView
+                android:id="@+id/item_tv_photo_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_share"
+                android:drawablePadding="@dimen/margin_10"
+                android:text="@string/share"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14"
+		android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin_10" >
+
+        <TextView
+            android:id="@+id/item_tv_content_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawablePadding="@dimen/margin_5"
+            android:drawableRight="@drawable/ic_priase_red"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+        
+         <TextView
+            android:id="@+id/item_tv_content_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_tv_content_name"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_below="@+id/item_tv_content_name"
+            android:textColor="@color/font_light_red"
+            android:textSize="@dimen/font_size_20" />
+
+        <TextView
+            android:id="@+id/item_tv_guoshi_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_tv_content_price"
+            android:layout_alignBottom="@+id/item_tv_content_price"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_14" />
+
+       
+
+        <Button
+            android:id="@+id/item_tv_add_one"
+            android:layout_width="70dip"
+            android:layout_height="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/dark_red_btn_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/again"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+
+        <RelativeLayout
+            android:id="@+id/item_rl_operation_layout"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/item_iv_minus_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_minimize" />
+
+            <TextView
+                android:id="@+id/item_tv_content_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/font_light_red"
+                android:textSize="@dimen/font_size_20"
+                />
+
+            <ImageView
+                android:id="@+id/item_iv_add_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_add_dish" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#F1EEED" >
+
+        <TextView
+            android:id="@+id/item_tv_dish_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14" />
+    </ScrollView>
+
+</LinearLayout>

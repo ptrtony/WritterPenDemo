@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" 
+            android:layout_marginTop="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:drawableLeft="@drawable/ic_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:padding="@dimen/margin_5"
+                android:text="@string/basicinfo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"
+                android:gravity="center_vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="@dimen/margin_8" >
+
+                <TextView
+                    android:id="@+id/userNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/user_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/userNameTitle"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/userName"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/app_bg_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="@dimen/margin_8" >
+
+                <TextView
+                    android:id="@+id/personNumTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/person_num"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <EditText
+                    android:id="@+id/personNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/personNumTitle"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/personNum"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/app_bg_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="@dimen/margin_8" >
+
+                <TextView
+                    android:id="@+id/companyNamesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_names"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" 
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/companyNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14"
+                    android:layout_centerVertical="true" 
+                    android:layout_toRightOf="@+id/companyNamesTitle"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/companyNames"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/app_bg_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="@dimen/margin_8" >
+
+                <TextView
+                    android:id="@+id/bankNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bank_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <EditText
+                    android:id="@+id/bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/bankNameTitle"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/bankName"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/app_bg_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="@dimen/margin_8" >
+
+                <TextView
+                    android:id="@+id/shopNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/shop_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <EditText
+                    android:id="@+id/shopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/shopNameTitle"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/shopName"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/app_bg_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical" 
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:drawableLeft="@drawable/ic_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:text="@string/upload_shop_pic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg_color" />
+
+            <com.android.bluetown.view.NoScrollGridView
+                android:id="@+id/shopImgGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="@dimen/margin_10"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/margin_10"
+                android:listSelector="@color/transparent" >
+            </com.android.bluetown.view.NoScrollGridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical" 
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:drawableLeft="@drawable/ic_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:text="@string/shop_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <com.android.bluetown.view.NoScrollGridView
+                android:id="@+id/shopTypeGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:listSelector="@color/transparent">
+            </com.android.bluetown.view.NoScrollGridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" 
+            android:layout_marginTop="@dimen/margin_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableLeft="@drawable/ic_mark"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/shop_intro"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/cityLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:gravity="right"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/shopIntro"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/white_stroke_bg" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/openNext"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/blue_darker_btn_bg"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/verfyMsgLy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10" >
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_msg_empty" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1.0"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:drawablePadding="5dp"
+                    android:gravity="top"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="12sp"
+                    android:layout_weight="1.0"
+                    android:singleLine="true" 
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/refuse"
+                    android:layout_width="60dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/orange_btn_bg"
+                    android:gravity="center"
+                    android:text="拒绝"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12"
+                     />
+
+                <TextView
+                    android:id="@+id/agree"
+                    android:layout_width="60dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/light_blue_btn_bg"
+                    android:gravity="center"
+                    android:text="同意"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14"
+                     />
+                <TextView
+                    android:id="@+id/requestStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_14"
+                    android:visibility="gone"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/productImg"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:transitionName="productimage"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" 
+        
+        >
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/product_name"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_12" 
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+           
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/product_price"
+                android:textColor="@color/red_btn_bg_color"
+                android:textSize="@dimen/font_size_12" 
+                android:layout_weight="1.0"
+		android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/soldOut"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/sale_out"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" 
+                android:layout_weight="1.0"
+                android:visibility="gone"
+                
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

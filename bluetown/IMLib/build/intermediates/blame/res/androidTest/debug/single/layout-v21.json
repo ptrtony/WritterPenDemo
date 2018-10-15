@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/tv_company4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/mark2"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="当前摄像截图"
+        android:textColor="@color/black"
+        android:textSize="14sp" 
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_personal"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:background="@drawable/pic_realtimezone"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_personal2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+             />
+
+        <ProgressBar
+            android:id="@+id/liveProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    android:id="@+id/realTimeMainLayout" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/jiankong_bg" />
+    <com.android.bluetown.view.HorizontalListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+    </com.android.bluetown.view.HorizontalListView>
+
+     <com.android.bluetown.listview.XListView
+        android:id="@+id/companyInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/white"
+        android:dividerHeight="@dimen/margin_10"
+        android:listSelector="@color/transparent"
+        android:fadingEdge="none"
+        android:scrollbars="none" 
+        android:background="@color/white"
+         >
+    </com.android.bluetown.listview.XListView>
+</LinearLayout>

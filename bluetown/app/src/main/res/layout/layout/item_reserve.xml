@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5">
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dp"
+                android:layout_weight="1.0"
+                android:background="@color/line_brown"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_itemreserve_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="散座1-4人桌"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dp"
+                android:layout_weight="1.0"
+                android:layout_gravity="center_vertical"
+                android:background="@color/line_brown" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_itemreserve_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="￥100.00起订"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/font_size_14"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5" />
+
+        <com.android.bluetown.view.NoScrollGridView
+            android:id="@+id/gv_itemreserve_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" >
+        </com.android.bluetown.view.NoScrollGridView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_no_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/order_finish"
+        android:textColor="@color/font_brown"
+        android:textSize="@dimen/font_size_14"
+        android:visibility="visible" />
+
+</LinearLayout>

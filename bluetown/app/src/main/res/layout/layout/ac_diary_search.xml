@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diary_top_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diary_search_service_cn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_20" 
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diary_search_service_en"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14" 
+        android:paddingLeft="@dimen/margin_10"/>
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/margin_10" >
+    <TextView
+        android:id="@+id/mailCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail_check"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_font_size_16" 
+        android:drawableTop="@drawable/diary_icon_1"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_10"
+        android:drawablePadding="@dimen/margin_10"/>
+
+    <TextView
+        android:id="@+id/trafficCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/traffic_check"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_font_size_16" 
+        android:layout_marginLeft="@dimen/margin_10"
+        android:drawableTop="@drawable/diary_icon_2"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_10"
+        android:drawablePadding="@dimen/margin_10"/>
+    </LinearLayout>
+</LinearLayout>

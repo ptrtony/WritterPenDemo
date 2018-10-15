@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parkNoLy"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:padding="@dimen/margin_10" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/smart_parking_icon" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gardenZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="园区A区"
+            android:textColor="@color/font_gray"
+            android:textSize="16sp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/carCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gardenZone"
+            android:layout_marginTop="2dp"
+            android:text="剩余车位"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+   
+
+    <TextView
+        android:id="@+id/yuyue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/yuanjiao_orange"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_15"
+        android:paddingTop="@dimen/margin_5"
+        android:text="预约"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/cant_yuyue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/yuanjiao_gray"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_15"
+        android:paddingTop="@dimen/margin_5"
+        android:text="预约"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lines_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+            android:text="4月5日 \n22:06"
+            android:textColor="@color/font_gray"
+            android:layout_marginLeft="@dimen/margin_10"/>
+
+        <TextView
+            android:id="@+id/amounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/font_black"
+            android:textSize="16sp"
+            android:text="-19"
+            android:layout_toRightOf="@+id/date"
+            android:layout_marginTop="@dimen/margin_3"/>
+
+        <TextView 
+            android:id="@+id/pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/font_green"
+            android:text="已完成"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/amounts"
+            android:text="食堂餐饮"
+            android:textColor="@color/font_gray"
+            android:textSize="12sp"
+            android:layout_below="@+id/amounts"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

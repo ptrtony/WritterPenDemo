@@ -1,0 +1,74 @@
+<!-- 搜索界面 --><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/gray_white_stroke_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10" >
+
+        <EditText
+            android:id="@+id/et_search_msg"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_merchant_search"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="center|left"
+            android:hint="@string/canteen_search_hint"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_search_layout"
+            android:background="@color/compnay_show_type_tag_stroke" />
+
+        <TextView
+            android:id="@+id/tv_search_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_5"
+            android:text="@string/search"
+            android:textColor="@color/title_bg_blue"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:padding="@dimen/margin_10"
+        android:text="@string/str_search_history"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_14" />
+
+    <!-- 历史记录 -->
+
+    <GridView
+        android:id="@+id/gv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/margin_5"
+        android:horizontalSpacing="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:stretchMode="columnWidth"
+        android:listSelector="@null" />
+
+
+</LinearLayout>

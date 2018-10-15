@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:background="@drawable/demand_type_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_10"
+    android:paddingRight="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_5" >
+
+    <CheckBox
+        android:id="@+id/typeCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:button="@drawable/demand_type_radio_selector"
+        android:checked="false"
+        android:focusable="false"
+        android:clickable="false"
+         />
+
+    <ImageView
+        android:id="@+id/demandTypeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/demand_sale" />
+
+    <TextView
+        android:id="@+id/demandTypeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/demand_meeting"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_14" />
+
+</LinearLayout>

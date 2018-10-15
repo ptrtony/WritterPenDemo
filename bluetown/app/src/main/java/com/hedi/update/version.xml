@@ -1,0 +1,11 @@
+<update>
+	<version>3</version>
+	<name>bluecity2.0</name>
+	<updateinfo>更新说明</updateinfo>
+	<forceupdate>0</forceupdate><!-- 是否强制更新 ：0 是，1否 -->
+	<url>app下载地址</url>
+	<appointcarnum>4</appointcarnum><!-- 单次最多预约车牌数目 -->
+	<appointinfo>配置项类型：提前预约时间\n内容： \n如果预约成功，在该时间区段，访客没有到来，系统将自动\n取消该预约。当月若失约两次，当月将不予再预约车位。	</appointinfo>
+	<parkingmonthinfo>配置项类型：车位包月须知\n内容：\n1. 付款成功后，请将指定的车停放到既定的车位。\n2. 车位由智慧园管理处提供，客服热线400-0808-094</parkingmonthinfo>
+	<checkmember>内容：审核大约1-2个工作日，请耐心等待。有任何疑问请致电400-0909-0808</checkmember>
+</update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/white"
+        android:padding="@dimen/margin_10" >
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="输入注册手机号"
+            android:paddingLeft="100dp"
+            android:textColor="#212121"
+            android:textColorHint="@color/font_hint"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册手机"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="@dimen/margin_10">
+        <EditText
+            android:id="@+id/verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="短信验证码"
+            android:paddingLeft="100dp"
+            android:textColor="#212121"
+            android:textColorHint="@color/font_hint"
+            android:textSize="@dimen/font_size_16" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yuanjiao_blue_stroke"
+            android:textColor="@color/title_bg_blue"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="获取验证码" />
+
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15"
+            android:background="@drawable/yuanjiao_blue"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+</LinearLayout>

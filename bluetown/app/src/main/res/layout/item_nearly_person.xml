@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_10" >
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_msg_empty"
+	android:background="@android:color/transparent"
+	 />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="@dimen/margin_10"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_14"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/chat_add_friend_stroke_btn_bg"
+            android:gravity="center"
+            android:text="@string/add_text"
+            android:textColor="@color/chat_tab_join_friend_color"
+            android:textSize="@dimen/font_size_14" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

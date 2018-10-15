@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.bluetown.view.NoScrollGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/canteenItemGridView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:horizontalSpacing="@dimen/margin_10"
+    android:numColumns="3"
+    android:scrollbars="none"
+    android:verticalSpacing="@dimen/margin_10" >
+
+</com.android.bluetown.view.NoScrollGridView>

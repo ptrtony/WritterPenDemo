@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/change_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:padding="@dimen/margin_10"
+            android:text="@string/change_psw"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/gesture_psw"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <com.android.bluetown.view.SwitchView
+                android:id="@+id/switch_gesture_psw"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/change_gesture_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:padding="@dimen/margin_10"
+            android:text="@string/change_gesture_psw"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/margin_20"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/gesture_psw_info"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="消息推送"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <com.android.bluetown.view.SwitchView
+                android:id="@+id/switch_push"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sound_setup"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <com.android.bluetown.view.SwitchView
+                android:id="@+id/switch_sound"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/about_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:padding="@dimen/margin_10"
+            android:text="@string/about_app"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16" />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:padding="@dimen/margin_10"
+            android:text="@string/help"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16" />
+
+        <TextView
+            android:id="@+id/clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:padding="@dimen/margin_10"
+            android:text="@string/clear_cache"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:text="@string/quit_login"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:visibility="gone"
+         >
+
+        <com.android.bluetown.view.RoundedImageView
+            android:id="@+id/circleLogo"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:scaleType="centerCrop"
+           />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/circleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/circlePersons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_toRightOf="@+id/circleTitle"
+                android:drawableLeft="@drawable/ic_hot"
+                android:drawablePadding="@dimen/margin_5"
+                android:singleLine="true"
+                android:textColor="@color/compnay_show_type_tag_text_bg"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/circleContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circleTitle"
+                android:layout_marginTop="@dimen/margin_5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:textColor="@color/compnay_show_type_tag_text_bg"
+                android:textSize="@dimen/font_size_10" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/joinIn"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_30"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/orange_stroke_btn_bg"
+            android:text="@string/add_info"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_size_14" 
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/compnay_detail_divier" />
+
+    <LinearLayout
+        android:id="@+id/topCircleList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none" 
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/view_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_actionbar">
+
+        <com.android.bluetown.view.RoundedImageView
+            android:id="@+id/riv_head_picture"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_msg_empty" />
+
+        <TextView
+            android:id="@+id/tv_home_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:clickable="true"
+            android:drawableLeft="@drawable/img_home_weizhi"
+            android:drawablePadding="@dimen/margin_5"
+            android:onClick="onClick"
+            android:text="123456"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_home_puls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:src="@drawable/puls" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/rl_head_actionBar"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_home_click_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="@dimen/margin_35"
+                android:layout_height="@dimen/margin_35"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_saoma" />
+
+            <TextView
+                android:id="@+id/tv_saoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_scan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="扫一扫"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_home_click_pay_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_pay_code"
+                android:layout_width="@dimen/margin_35"
+                android:layout_height="@dimen/margin_35"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_paycode" />
+
+            <TextView
+                android:id="@+id/tv_paycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_pay_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="付款码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_home_click_pass_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_pass_code"
+                android:layout_width="@dimen/margin_35"
+                android:layout_height="@dimen/margin_35"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_passcode" />
+
+            <TextView
+                android:id="@+id/tv_passcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_pass_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:text="通行码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/v_title_big_mask"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:focusable="false" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <com.android.bluetown.view.RoundImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_msg_empty"
+        app:type="round"/>
+    <TextView
+        android:id="@+id/tv_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"/>
+</RelativeLayout>
+
+
+
+

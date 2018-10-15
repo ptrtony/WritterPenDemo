@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#BABABA" >
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:text="取消"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right" >
+
+                    <Button
+                        android:id="@+id/ok"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:text="确定"
+                        android:textColor="@color/title_bg_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.android.bluetown.datewheel.NoPSWPayPicker
+                android:id="@+id/personpicker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:gravity="bottom" >
+            </com.android.bluetown.datewheel.NoPSWPayPicker>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

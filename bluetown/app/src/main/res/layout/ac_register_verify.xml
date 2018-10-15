@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_gradient__top_blue">
+    <include layout="@layout/app_bar_back"
+        android:id="@+id/backlayout"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/backlayout"/>
+
+
+    <EditText
+        android:id="@+id/mobileNum"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="@dimen/y15"
+        android:background="@null"
+        android:drawablePadding="@dimen/margin_10"
+        android:hint="@string/mobile_num"
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_50"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_title"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_divider_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_50"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/mobileNum"/>
+
+    <LinearLayout
+        android:id="@+id/ll_input_code_content"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_divider_mobile">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/verifyCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/msg_verify_code_hint"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_50"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <com.android.bluetown.view.TimeButton
+            android:id="@+id/sengVerifyCode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/bg_register_button"
+            android:singleLine="true"
+            android:text="@string/get_msg_verify_code"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/font_size_14"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_divider_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/white_50"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/ll_input_code_content"/>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/margin_5"-->
+        <!--android:text="@string/verify_tip"-->
+        <!--android:textColor="@color/gray_btn_bg_color"-->
+        <!--android:textSize="@dimen/font_size_12" />-->
+
+    <LinearLayout
+        android:id="@+id/userPro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view_divider_code"
+
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/registerPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/check_box_selector"
+            android:gravity="center"
+            android:text="@string/i_agree"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_12"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/x14"
+            android:textColor="@color/white_50"
+            android:text="注册表示你同意" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/register_pro_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_unclick_button"
+        android:text="@string/next"
+        android:textColor="@color/app_blue"
+        android:textSize="18sp"
+        android:layout_below="@+id/userPro"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

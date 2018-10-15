@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/white"
+        android:padding="@dimen/margin_10" >
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/input_account"
+            android:paddingLeft="50dp"
+            android:textColor="#212121"
+            android:textColorHint="@color/font_hint"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/yuanjiao_blue"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/font_size_16"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cant_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/yuanjiao_light_blue"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

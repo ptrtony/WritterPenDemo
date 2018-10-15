@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_10" >
+
+    <ImageView
+        android:id="@+id/hotMerchantImg"
+        android:layout_width="120dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic02" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:orientation="vertical" >
+
+ <TextView
+            android:id="@+id/merchantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="红豆餐厅"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/merchantCanteenDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:singleLine="true"
+            android:text="来这里，让你品尝到亚洲最美味的海鲜，一生难忘！"
+            android:textColor="@color/gray_btn"
+            android:textSize="@dimen/font_size_14" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+	    android:layout_marginTop="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/canteenPrice"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="人均：120元"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/merchantDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_5"
+                
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:singleLine="true"
+                android:text="1.1km"
+               
+            android:textColor="@color/gray_btn"
+            android:textSize="@dimen/font_size_12" />
+ </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

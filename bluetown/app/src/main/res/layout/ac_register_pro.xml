@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_home_gradient__top_blue"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/backlayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/back"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册协议"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_15"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/registerPro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_pro_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14"
+            android:lineSpacingExtra="5dp"/>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,254 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/bg_home_gradient__top_blue"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_anthentication_corner"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="40dp">
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_marginTop="@dimen/margin_15"-->
+        <!--android:background="@color/white"-->
+        <!--android:padding="@dimen/margin_10" >-->
+
+        <EditText
+            android:id="@+id/real_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_gray_edit_text_cornel"
+            android:gravity="center_vertical"
+            android:hint="@string/input_real_name"
+            android:paddingLeft="32dp"
+            android:textColor="@color/gray_btn"
+            android:textColorHint="@color/gray_btn"
+            android:textSize="@dimen/font_size_16"/>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/real_name"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/font_size_16"-->
+        <!--android:textStyle="bold" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginLeft="@dimen/margin_10"-->
+        <!--android:background="@drawable/app_bg" />-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:padding="@dimen/margin_10" >-->
+
+        <EditText
+            android:id="@+id/id_card"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/real_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_gray_edit_text_cornel"
+            android:gravity="center_vertical"
+            android:hint="@string/input_id_card"
+            android:paddingLeft="32dp"
+            android:textColor="@color/gray_btn"
+            android:textColorHint="@color/gray_btn"
+            android:textSize="@dimen/font_size_16"/>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/id_card"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/font_size_16"-->
+        <!--android:textStyle="bold" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_choose_garden"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_marginTop="@dimen/margin_15"-->
+        <!--android:background="@color/white"-->
+        <!--android:padding="@dimen/margin_10" >-->
+
+        <TextView
+            android:id="@+id/choose_company"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_card"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_gray_edit_text_cornel"
+            android:drawablePadding="32dp"
+            android:drawableRight="@drawable/icon_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="20dp"
+            android:text="@string/choose_company"
+            android:textColor="@color/gray_btn"
+            android:textSize="@dimen/font_size_16"/>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/choose_garden"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/font_size_16"-->
+        <!--android:textStyle="bold" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginLeft="@dimen/margin_10"-->
+        <!--android:background="@drawable/app_bg" />-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_choose_company"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:padding="@dimen/margin_10" >-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/choose_company"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawablePadding="@dimen/margin_10"-->
+        <!--android:drawableRight="@drawable/im_personal_main_enter_icon"-->
+        <!--android:gravity="right"-->
+        <!--android:textColor="#212121"-->
+        <!--android:textSize="@dimen/font_size_16" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/choose_company"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/font_size_16"-->
+        <!--android:textStyle="bold" />-->
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:id="@+id/tv_upload_voucher_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_company"
+            android:layout_marginTop="30dp"
+            android:text="@string/upload_voucher_pic"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_16" />
+
+        <!--<LinearLayout -->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/margin_10">-->
+
+        <RelativeLayout
+            android:id="@+id/rl_identity1"
+            style="@style/identity_anthentication"
+            android:layout_below="@+id/tv_upload_voucher_pic"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/identity_card"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_identity1"
+            style="@style/authentication_text"
+            android:layout_below="@+id/rl_identity1"
+            android:text="身份证正面" />
+
+        <RelativeLayout
+            android:id="@+id/rl_identity2"
+            style="@style/identity_anthentication"
+            android:layout_below="@+id/tv_identity1"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/identity_rear"
+                android:scaleType="fitXY" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_identity_rear"
+            style="@style/authentication_text"
+            android:layout_below="@+id/rl_identity2"
+            android:text="身份证反面" />
+
+        <RelativeLayout
+            android:id="@+id/rl_identity3"
+            style="@style/identity_anthentication"
+            android:layout_below="@+id/tv_identity_rear"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/company_chaper"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_company_chaper"
+            style="@style/authentication_text"
+            android:layout_below="@+id/rl_identity3"
+            android:text="所属公司敲章证明" />
+
+
+        <TextView
+            android:id="@+id/submit_get"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_identity_submit_cornel"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"
+            android:layout_below="@+id/tv_company_chaper"/>
+    </RelativeLayout>
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="@dimen/margin_10"-->
+    <!--android:text="@string/pic_info"-->
+    <!--android:textColor="@color/font_red" />-->
+
+
+    <!--</LinearLayout>-->
+
+</ScrollView>
+
+

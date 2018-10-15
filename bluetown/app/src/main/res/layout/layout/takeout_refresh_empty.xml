@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16.0dip" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0" />
+
+    <ImageView
+        android:id="@+id/img_no_content_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/takeout_img_net_disable"
+        />
+
+    <TextView
+        android:id="@+id/txt_empty_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24.0dip"
+        android:gravity="center"
+        android:text="网络连接不可用，请稍后重试"
+        android:textSize="15.0sp" />
+      <TextView
+        android:id="@+id/tv_refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="重新加载"
+        android:textSize="@dimen/font_size_20" /> 
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.0" />
+
+</LinearLayout>

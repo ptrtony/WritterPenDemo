@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+
+            <!-- This is the border color -->
+            <solid android:color="@color/list_divider_color2" />
+
+            <padding
+                android:bottom="1.0dip"
+                android:left="0.0dip"
+                android:right="0.0dip"
+                android:top="0.0dip" />
+        </shape>
+    </item>
+    <item>
+
+        <!-- This is the main color -->
+        <shape>
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+</layer-list>

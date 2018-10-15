@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPullRefreshView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<ListView-->
+    <!--android:id="@+id/postList"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:cacheColorHint="@color/transparent"-->
+    <!--android:divider="@color/app_bg_color"-->
+    <!--android:dividerHeight="@dimen/margin_10"-->
+    <!--android:scrollbars="none" -->
+    <!--android:listSelector="@color/transparent"-->
+    <!--/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.android.bluetown.circie_base.circie_base_ui.widget.pullrecyclerview.CircleRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view">
+        </com.android.bluetown.circie_base.circie_base_ui.widget.pullrecyclerview.CircleRecyclerView>
+    </FrameLayout>
+</LinearLayout>

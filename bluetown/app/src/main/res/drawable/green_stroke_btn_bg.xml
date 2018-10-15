@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="2dp" />
+            <!-- solid中定义的颜色值需要包含alpha值 -->
+            <stroke android:color="@color/chat_tab_join_group_color" android:width="1dp"/>
+        </shape>
+        </item>
+    <item android:state_pressed="true" >
+        <shape>
+            <corners android:radius="2dp"/>
+            <!-- solid中定义的颜色值需要包含alpha值 -->
+            <solid android:color="@color/white" />
+            <stroke android:color="@color/chat_tab_join_group_color" android:width="1dp"/>
+        </shape></item>
+
+</selector>

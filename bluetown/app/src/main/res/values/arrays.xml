@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="hotcity">  
+        <item >北京</item>  
+        <item >上海</item>  
+        <item >广州</item>  
+        <item >深圳</item>  
+        <item >成都</item> 
+        <item >重庆</item> 
+        <item >天津</item> 
+        <item >杭州</item> 
+        <item >南京</item> 
+        <item >苏州</item> 
+        <item >武汉</item>  
+    </string-array>  
+    <string-array name="hotcitycode">  
+        <item >110100</item>
+        <item >310100</item>  
+        <item >440100</item>  
+        <item >440300</item>    
+        <item >510100</item>  
+        <item >500100</item>  
+        <item >120100</item>  
+        <item >330100</item>  
+        <item >320100</item>
+        <item >320500</item>  
+        <item >420100</item>    
+    </string-array>  
+    <string-array name="citydate">
+        <item>北京</item>
+        <item>天津</item>
+        <item>上海</item>
+        <item>重庆</item>
+        <item>乌鲁木齐</item>
+        <item>克拉玛依</item>
+        <item>石河子</item>
+        <item>阿拉尔市</item>
+        <item>图木舒克</item>
+        <item>哈密</item>
+        <item>五家渠</item>
+        <item>吐鲁番</item>
+        <item>阿克苏</item>
+        <item>南京</item>
+        <item>镇江</item>
+        <item>常州</item>
+        <item>无锡</item>
+        <item>苏州</item>
+        <item>徐州</item>
+        <item>连云港</item>
+        <item>淮安</item>
+        <item>盐城</item>
+        <item>扬州</item>
+        <item>泰州</item>
+        <item>南通</item>
+        <item>宿迁</item>
+        <item>成都</item>
+        <item>绵阳</item>
+        <item>德阳</item>
+        <item>广元</item>
+        <item>自贡</item>
+        <item>南充</item>
+        <item>内江</item>
+        <item>乐山</item>
+        <item>攀枝花</item>
+        <item>遂宁</item>
+        <item>广安</item>
+        <item>达州</item>
+        <item>眉山</item>
+        <item>宜宾</item>
+        <item>雅安</item>
+        <item>资阳</item>
+        <item>西安</item>
+        <item>咸阳</item>
+        <item>延安</item>
+        <item>铜川</item>
+        <item>宝鸡</item>
+        <item>渭南</item>
+        <item>汉中</item>
+        <item>安康</item>
+        <item>商洛</item>
+        <item>榆林</item>
+    </string-array>
+    <string-array name="day">
+        <item>今天</item>
+        <item>明天</item>
+        <item>后天</item>
+    </string-array>
+    <string-array name="week">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    
+    <string-array name="order">
+        <item>离我最近</item>
+        <item>好评优先</item>
+        <item>最新发布</item>
+        <item>价格最低</item>
+        <item>价格最高</item>
+    </string-array>
+
+</resources>

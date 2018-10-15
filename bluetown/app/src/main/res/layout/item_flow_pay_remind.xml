@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_home_pay_remind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/home_head_bg"
+        android:paddingLeft="@dimen/x6"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableRight="@drawable/arrow_right"
+        android:paddingRight="@dimen/x8"
+        android:layout_marginTop="@dimen/y3"
+        android:layout_marginLeft="@dimen/x8"
+        android:layout_marginRight="@dimen/x8"
+        android:drawableLeft="@drawable/icon_mes"
+        android:gravity="center_vertical"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_14"
+        android:text="你有一笔支出消费  15.2元  5分钟前"/>
+</LinearLayout>

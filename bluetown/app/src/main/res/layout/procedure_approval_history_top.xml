@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_tel"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/zone_link_tel"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/zoneTel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/tel_num"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/iv_common_cutoff1"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_tel"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/real_estate_link_tel"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/realEstateTel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/tel_num"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.android.bluetown.view.slideview.SlidingPlayView
+            android:id="@+id/companyDetailShowView"
+            android:layout_width="match_parent"
+            android:layout_height="180dip" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="8dp"
+                android:text="宁波智慧园A座302层1988室"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/compnay_detail_divier" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/companyTypeTag"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="5dp"
+                android:text="电话：12345678910"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_telephone"
+                android:layout_alignBottom="@+id/tv_telephone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:drawableLeft="@drawable/touxiang"
+                android:drawablePadding="5dp"
+                android:text="联系店家"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/compnay_detail_divier" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal" 
+            android:paddingTop="@dimen/margin_40">
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:text="订座" />
+
+            <Button
+                android:id="@+id/search1"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/btn_bg_r"
+                android:textColor="@color/white"
+                android:text="点菜" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

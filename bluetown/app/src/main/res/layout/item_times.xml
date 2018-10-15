@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_times_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/time_stroke_bg"
+    android:minHeight="@dimen/margin_40"
+    android:minWidth="@dimen/margin_40" >
+
+    <TextView
+        android:id="@+id/tv_itemtimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="10:10"
+        android:gravity="center"
+        android:textColor="@color/compnay_show_type_tag_text_bg" />
+
+    <ImageView
+        android:id="@+id/isSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dish_check"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

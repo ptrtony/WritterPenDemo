@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pay_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_onlinepay_timess"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#fff9c4" >
+
+            <TextView
+                android:id="@+id/hideView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_order_state_tip"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/order_close_tip"
+                android:textColor="#ff6d00"
+                android:textSize="@dimen/font_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_onlinerservepay_selete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_order_close" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:fadingEdge="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_10" >
+
+                    <TextView
+                        android:id="@+id/bt_onlineserver_locationss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_merchant"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:gravity="left|center_vertical"
+                        android:text="巴蜀大宅门（五角场万达店）"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/bt_onlineserver_Seatss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:drawableLeft="@drawable/ic_table"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:gravity="left|center_vertical"
+                        android:text="散桌1-4人桌"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/bt_onlineserver_timesss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:gravity="left|center_vertical"
+                        android:text="2015-01-14 周三 17：00"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_online_lv_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/alreadyDish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_ordered"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_10"
+                        android:text="@string/ordered_dish"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <com.android.bluetown.view.ListViewForScrollView
+                        android:id="@+id/lv_online_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/two_line_white_bg"
+                        android:divider="@android:color/transparent"
+                        android:listSelector="@android:color/transparent" >
+                    </com.android.bluetown.view.ListViewForScrollView>
+
+                    <TextView
+                        android:id="@+id/tv_online_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_10"
+                        android:text="共4份"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bt_onlinerserve_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/pay_method"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_16"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/lv_onlineservers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" 
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/rg_onlinerespay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/cb_onlinepay_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/order_pay_radio_seletor"
+                            android:drawablePadding="@dimen/margin_5"
+                            android:drawableRight="@drawable/ic_payment"
+                            android:padding="@dimen/margin_10"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/cb_onlinepay_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/order_pay_radio_seletor"
+                            android:drawablePadding="@dimen/margin_5"
+                            android:drawableRight="@drawable/ic_payment"
+                            android:padding="@dimen/margin_10"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/cb_onlinepay_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/order_pay_radio_seletor"
+                            android:drawablePadding="5dip"
+                            android:drawableRight="@drawable/ic_payment"
+                            android:padding="@dimen/margin_10"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/tv_onlinerserpay_total"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/font_light_red"
+                android:textSize="@dimen/font_size_16" />
+
+            <Button
+                android:id="@+id/bt_onlinerserverpay_sures"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/margin_40"
+                android:layout_weight="1.0"
+                android:background="@drawable/blue_darker_btn_bg"
+                android:gravity="center"
+                android:text="@string/confirm_pay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pay_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/ll_refresh_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/pay_refresh_progress" />
+    </LinearLayout>
+
+</LinearLayout>

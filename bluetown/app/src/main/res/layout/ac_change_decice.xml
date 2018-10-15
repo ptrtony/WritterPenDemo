@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_gradient__top_blue"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/backlayout"
+        layout="@layout/app_bar_back" />
+
+    <TextView
+        android:id="@+id/tv_identity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backlayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="身份验证"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_28" />
+
+    <com.android.bluetown.view.ClearEditText
+        android:id="@+id/verifycode"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tv_identity"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="短信验证码"
+        android:inputType="number"
+        android:paddingLeft="30dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_50"
+        android:textSize="@dimen/font_size_20"
+        android:layout_toLeftOf="@+id/reget_verifycode"
+        android:paddingRight="15dp"/>
+
+    <com.android.bluetown.view.TimeButton
+        android:id="@+id/reget_verifycode"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_identity"
+        android:layout_marginRight="30dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/bg_register_button"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/get_msg_verify_code"
+        android:textColor="@color/white_50"
+        android:textSize="@dimen/font_size_14"
+        android:layout_marginTop="46dp"/>
+
+    <View
+        android:id="@+id/view_divider_password"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/verifycode"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/white_50" />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_unclick_button"
+        android:text="@string/commit"
+        android:textColor="@color/app_blue"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_below="@+id/view_divider_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        />
+ </RelativeLayout>

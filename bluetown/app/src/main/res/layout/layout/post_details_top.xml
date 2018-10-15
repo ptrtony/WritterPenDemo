@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" 
+        android:padding="@dimen/margin_10"
+	>
+
+        <com.android.bluetown.view.RoundedImageView
+            android:id="@+id/circleLogo"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+          
+            android:scaleType="centerCrop"
+             />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+	    android:layout_weight="1.0"
+            android:orientation="vertical" 
+	    android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/postUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/postUserType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/postUser"
+                android:background="@color/title_bg_blue"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/post_user_type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_10" />
+
+            <TextView
+                android:id="@+id/postPublishDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/postUser"
+                android:layout_marginTop="@dimen/margin_5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/compnay_show_type_tag_text_bg"
+                android:textSize="@dimen/font_size_10" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addFriends"
+            android:layout_width="60dip"
+            android:layout_height="@dimen/margin_30"
+            android:layout_gravity="right|center_vertical"
+            
+            android:background="@drawable/orange_btn_bg"
+            android:text="@string/add_friend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_size_14" 
+	android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10" />
+
+    <TextView
+        android:id="@+id/postContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_14"
+	android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/postImgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="right|center_vertical"
+            android:padding="@dimen/margin_10"
+	    >
+
+            <TextView
+                android:id="@+id/postPriaseCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/font_black"
+                android:drawableLeft="@drawable/like"
+                android:drawablePadding="@dimen/margin_5"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/compnay_show_type_tag_stroke"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10" />
+
+            <TextView
+                android:id="@+id/attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/attention"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/replyPost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_mark"
+        android:drawablePadding="@dimen/margin_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="@string/replay_post"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/title_font_size_16" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.bluetown.view.NestRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_gradient__top_blue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/include_title_big"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_loading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/iv_loading_top"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitXY"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/tv_loading"
+                        android:text="努力加载中..."
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/rl_move"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--<include layout="@layout/include_home_pay_content"/>-->
+                <!--<com.android.bluetown.view.MyListView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                <!--</com.android.bluetown.view.MyListView>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="900dp"
+                    android:background="#d60808"></LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.android.bluetown.view.NestRefreshScrollView>

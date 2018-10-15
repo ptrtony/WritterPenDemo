@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/unApponitLy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/appoint_fail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:text="@string/un_appoint_tip"
+                android:textColor="@color/red_btn_bg_color"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center"
+                android:text="@string/un_apponit_carport"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+        </LinearLayout>
+
+</ScrollView>

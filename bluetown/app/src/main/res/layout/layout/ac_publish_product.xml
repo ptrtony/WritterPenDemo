@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_8" >
+
+            <TextView
+                android:id="@+id/productNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_30"
+                android:drawableLeft="@drawable/ness_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/publish_product_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/productNameTitle"
+                android:background="@null"
+                android:hint="@string/publish_product_name_hint"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"
+		android:singleLine="true"
+                android:ellipsize="end"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/productName"
+                android:layout_alignParentBottom="true"
+                android:background="@color/compnay_show_type_tag_stroke" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_8" >
+
+            <TextView
+                android:id="@+id/linkTelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_5"
+                android:drawableLeft="@drawable/ness_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/link_tel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/linkTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linkTelTitle"
+                android:background="@null"
+                android:hint="@string/link_tel_hint"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" 
+		android:singleLine="true"
+                android:ellipsize="end" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/linkTel"
+                android:layout_alignParentBottom="true"
+                android:background="@color/compnay_show_type_tag_stroke" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_8" >
+
+            <TextView
+                android:id="@+id/productPriceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_30"
+                android:drawableLeft="@drawable/ness_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/product_price_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/productPriceTitle"
+                android:background="@null"
+                android:hint="@string/product_price_hint"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"
+		android:singleLine="true"
+                android:ellipsize="end"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/productPrice"
+                android:layout_alignParentBottom="true"
+                android:background="@color/compnay_show_type_tag_stroke" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_8" >
+
+            <TextView
+                android:id="@+id/normsTypeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_30"
+                android:drawableLeft="@drawable/ness_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/norms_type_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/normsType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/normsTypeTitle"
+                android:background="@null"
+                android:hint="@string/norms_type_hint"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"
+		android:singleLine="true"
+                android:ellipsize="end" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/normsType"
+                android:layout_alignParentBottom="true"
+                android:background="@color/compnay_show_type_tag_stroke" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_8" >
+
+            <TextView
+                android:id="@+id/productTypeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_30"
+                android:drawableLeft="@drawable/ness_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/product_type_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/productType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/productTypeTitle"
+                android:background="@null"
+                android:hint="@string/product_type_hint"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" 
+		android:singleLine="true"
+                android:ellipsize="end" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/productType"
+                android:layout_alignParentBottom="true"
+                android:background="@color/compnay_show_type_tag_stroke" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_8"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/numberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ness_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_toRightOf="@+id/numberTitle"
+                android:background="@null"
+                android:hint="@string/number_tip"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/number"
+                android:layout_alignParentBottom="true"
+                android:background="@color/compnay_show_type_tag_stroke" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_product_pic"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14" />
+
+            <com.android.bluetown.view.NoScrollGridView
+                android:id="@+id/productImgGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/margin_5"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/margin_5" >
+            </com.android.bluetown.view.NoScrollGridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ness_mark"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/product_des"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/productDes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/white_stroke_bg"
+                android:gravity="top"
+                android:hint="@string/product_des_content_hint"
+                android:minHeight="120dp"
+                android:padding="@dimen/margin_5"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/publishProduct"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/blue_darker_btn_bg"
+            android:text="@string/publish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16" />
+    </LinearLayout>
+
+</ScrollView>

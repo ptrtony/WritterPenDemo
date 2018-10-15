@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/dot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/dealwith_dot" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/dot1"
+                    android:layout_alignRight="@+id/dot1"
+                    android:layout_below="@+id/dot1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/deal_service_line_left" />
+
+                <TextView
+                    android:id="@+id/complaintSuggestDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/dot1"
+                    android:text="@string/complaint_suggest_details"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/dealStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/complaintSuggestDetails"
+                    android:gravity="right"
+                    android:text="@string/un_deal_with"
+                    android:textColor="@color/font_orange"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:id="@+id/complaintSuggestDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/complaintSuggestDetails"
+                    android:layout_below="@+id/complaintSuggestDetails"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/deal_with_date"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="@dimen/font_size_10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/complaintSuggestDetails"
+                    android:layout_below="@+id/complaintSuggestDate"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/deal_service_line_d" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/complaintAddressDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gray_time_dot" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/complaintAddressDot"
+                    android:layout_alignRight="@+id/complaintAddressDot"
+                    android:layout_below="@+id/complaintAddressDot"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/deal_service_line_left" />
+
+                <TextView
+                    android:id="@+id/complaintAddressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/complaintAddressDot"
+                    android:text="@string/complaint_address"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/complaintAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/complaintAddressTitle"
+                    android:layout_below="@+id/complaintAddressTitle"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:drawableLeft="@drawable/ic_home"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/service_address"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="@dimen/font_size_10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/complaintIntroTitleDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gray_time_dot" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/complaintIntroTitleDot"
+                    android:layout_alignRight="@+id/complaintIntroTitleDot"
+                    android:layout_below="@+id/complaintIntroTitleDot"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/deal_service_line_left" />
+
+                <TextView
+                    android:id="@+id/complaintIntroTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/complaintIntroTitleDot"
+                    android:text="@string/complaint_intro"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/complaintIntro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/complaintIntroTitle"
+                    android:layout_below="@+id/complaintIntroTitle"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:drawableLeft="@drawable/ic_explain"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:text="@string/complaint_content"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="@dimen/font_size_10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/complaintImgDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gray_time_dot" />
+
+                <ImageView
+                    android:id="@+id/complaintImgDivide1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/complaintImgDot"
+                    android:layout_alignRight="@+id/complaintImgDot"
+                    android:layout_below="@+id/complaintImgDot"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/deal_service_line_left" />
+
+                <TextView
+                    android:id="@+id/complaintImgTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/complaintImgDot"
+                    android:text="@string/complaint_pic"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/complaintImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/complaintImgTitle"
+                    android:layout_below="@+id/complaintImgTitle"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:drawableLeft="@drawable/ic_pic"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:gravity="center"
+                    android:text="@string/unloaded"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="@dimen/font_size_10" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dealFeedbackLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/dealFeedbackDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dealwith_dot" />
+
+            <View
+                android:layout_width="2.5dip"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/dealFeedbackDot"
+                android:layout_below="@+id/dealFeedbackDot"
+                android:layout_marginLeft="8dip"
+                android:background="@color/deal_service_line_left_color"
+                android:minHeight="109dip" />
+
+            <TextView
+                android:id="@+id/dealFeedbackTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/dealFeedbackDot"
+                android:text="@string/deal_with_feedback"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/dealFeedbackDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dealFeedbackTitle"
+                android:layout_below="@+id/dealFeedbackTitle"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:text="@string/deal_with_date"
+                android:textColor="@color/compnay_show_type_tag_text_bg"
+                android:textSize="@dimen/font_size_10" />
+
+            <View
+                android:id="@+id/dealFeedbackDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/dealFeedbackTitle"
+                android:layout_below="@+id/dealFeedbackDate"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/deal_service_line_d" />
+
+            <TextView
+                android:id="@+id/dealFeedbackContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dealFeedbackTitle"
+                android:layout_below="@+id/dealFeedbackDivider"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableLeft="@drawable/ic_explain"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/suggest_deal_reply"
+                android:textColor="@color/compnay_show_type_tag_text_bg"
+                android:textSize="@dimen/font_size_10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

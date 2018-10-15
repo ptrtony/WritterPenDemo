@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/line_l"
+                android:text="@string/self_service_type"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <TextView
+                android:id="@+id/faultType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/more"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/product_type_hint"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dealDateLy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/self_service_date"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/line_l"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/more"
+                android:text="@string/self_service_year"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/line_l"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/more"
+                android:text="@string/self_service_month"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/line_l"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/more"
+                android:text="@string/self_service_day"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/self_service_time"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/noon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/radiogroup_selector"
+                    android:checked="true"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/self_service_noon"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <RadioButton
+                    android:id="@+id/afternoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/radiogroup_selector"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/self_service_afternoon"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <RadioButton
+                    android:id="@+id/all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/radiogroup_selector"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/self_service_day_all"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_40"
+                android:drawableRight="@drawable/line_l"
+                android:text="@string/address_title"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:background="@null"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/line_l"
+                android:text="@string/telphone_num_title"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:background="@null"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/service_fault_intro"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <EditText
+                android:id="@+id/faultContent"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/white_stroke_bg"
+                android:gravity="top"
+                android:hint="@string/service_fault_intro_hint"
+                android:maxLength="50"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:text="@string/upload_pic"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16" />
+
+        <com.android.bluetown.view.NoScrollGridView
+            android:id="@+id/imgGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:horizontalSpacing="@dimen/margin_5"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/margin_5" >
+        </com.android.bluetown.view.NoScrollGridView>
+
+        <Button
+            android:id="@+id/serviceCommit"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/blue_darker_btn_bg"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16" />
+    </LinearLayout>
+
+</ScrollView>

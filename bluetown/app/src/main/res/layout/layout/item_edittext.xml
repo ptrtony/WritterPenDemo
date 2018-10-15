@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_size_16"
+        android:paddingBottom="@dimen/margin_10"
+        android:gravity="center"
+        android:text="输入登录密码"/>
+    <EditText 
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColorHint="@color/font_light_gray"
+        android:hint="此应用密码"
+        android:background="@drawable/kuang_bg"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/font_black"/>
+
+</LinearLayout>

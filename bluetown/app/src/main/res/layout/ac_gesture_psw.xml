@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical" >
+
+
+    <GridView
+        android:id="@+id/gv_lock"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:verticalSpacing="5dip" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/gv_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textColor="#FF2525"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <com.android.bluetown.view.GestureLockView
+        android:id="@+id/gestureLockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.android.bluetown.view.GestureLockView>
+
+</LinearLayout>

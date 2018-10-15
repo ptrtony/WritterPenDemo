@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/mywallet_bg"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10" >
+
+        <LinearLayout
+            android:id="@+id/ll_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:drawableLeft="@drawable/mywallet_yuan"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="查看明细"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cm_support_withdraw"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="#88FFFFFF"
+            android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/rl_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mywallet_01"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/recharge"
+                android:textColor="@color/font_light_gray"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/authentication_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_QR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mywallet_04"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/QR"
+                android:textColor="@color/font_light_gray"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_transfer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center" >-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/ic_mywallet_02"-->
+                <!--android:drawablePadding="@dimen/margin_5"-->
+                <!--android:text="@string/transfer_accounts"-->
+                <!--android:textColor="@color/font_light_gray"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/authentication_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_saoyisao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mywallet_03"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/saoyisao"
+                android:textColor="@color/font_light_gray"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/authentication_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mywallet_04"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="@string/QR"
+                android:textColor="@color/font_light_gray"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/paysetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/white"
+        android:padding="@dimen/margin_10" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setup"
+            android:drawablePadding="@dimen/margin_10"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:gravity="center_vertical"
+            android:text="@string/paysetup"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/title_font_size_16" />
+    </RelativeLayout>
+
+</LinearLayout>

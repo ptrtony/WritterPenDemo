@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/verfiyMsgLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+ 		android:id="@+id/verifyMsgImg"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/verify_msg_bg" />
+
+            <TextView
+                android:id="@+id/unReadmsgCount"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="right"
+                android:background="@drawable/red_circle_bg"
+                android:gravity="center"
+                android:padding="2dip"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/verifyMsg"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/friend_request_msg"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/verifyMsgTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/gray_btn"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/latestMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+		android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray_btn"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/compnay_detail_divier" />
+    <!-- 会话列表的Fragment -->
+
+    <fragment
+        android:id="@+id/conversationlist"
+        android:name="io.rong.imkit.fragment.ConversationListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

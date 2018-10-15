@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/canteenFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.android.bluetown.view.WrapContentHeightViewPager
+            android:id="@+id/canteenViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false" 
+            android:layout_margin="@dimen/margin_10">
+        </com.android.bluetown.view.WrapContentHeightViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_5"
+            android:background="@color/white" 
+ 	    android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5">
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.android.bluetown.view.NoScrollGridView
+        android:id="@+id/foodTypesGrivView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:numColumns="3"
+        android:scrollbars="none" >
+    </com.android.bluetown.view.NoScrollGridView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="@dimen/margin_10"
+        android:text="@string/hot_merchant"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

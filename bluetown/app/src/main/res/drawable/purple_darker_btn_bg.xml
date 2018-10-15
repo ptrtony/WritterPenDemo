@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="2dp" />
+            <!-- solid中定义的颜色值需要包含alpha值 -->
+            <solid android:color="@color/chat_tab_create_group_color" />
+        </shape>
+        </item>
+    <item android:state_pressed="true" >
+        <shape>
+            <corners android:radius="2dp"/>
+            <!-- solid中定义的颜色值需要包含alpha值 -->
+            <solid android:color="@color/chat_tab_create_group_color" />
+        </shape></item>
+
+</selector>

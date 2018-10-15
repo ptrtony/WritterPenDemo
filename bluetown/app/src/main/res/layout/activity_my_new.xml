@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_5295F5">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/authentication_bg">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/color_5295F5"/>
+        <include layout="@layout/layout_title"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10" >
+
+            <com.android.bluetown.view.RoundedImageView
+                android:id="@+id/touxing"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_msg_empty"/>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/im_personal_main_enter_icon" />
+
+            <TextView
+                android:id="@+id/telnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/touxing"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_toRightOf="@+id/touxing"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/font_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/touxing"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_toRightOf="@+id/touxing"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/font_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bookOrderLy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_my_01"
+                android:drawablePadding="@dimen/margin_10"
+                android:text="我的订单"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/title_font_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/im_personal_main_enter_icon"
+                android:drawablePadding="@dimen/margin_10"
+                android:text="查看全部订单"
+                android:textColor="@color/font_gray" />
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/mywallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:drawableLeft="@drawable/ic_my_02"
+            android:drawablePadding="@dimen/margin_10"
+            android:layout_marginTop="1dp"
+            android:text="我的钱包"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16"/>
+        <TextView 
+            android:id="@+id/collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:drawableLeft="@drawable/ic_my_04"
+            android:drawablePadding="@dimen/margin_10"
+            android:layout_marginTop="15dp"
+            android:text="收藏"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16"/>
+        <TextView 
+            android:id="@+id/guanzhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:drawableLeft="@drawable/ic_my_05"
+            android:drawablePadding="@dimen/margin_10"
+            android:layout_marginTop="1dp"
+            android:text="我的关注"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16"/>
+        <TextView 
+            android:id="@+id/mymessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:drawableLeft="@drawable/ic_my_06"
+            android:drawablePadding="@dimen/margin_10"
+            android:layout_marginTop="1dp"
+            android:text="我的消息"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16"/>
+        <TextView 
+            android:id="@+id/huodong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:drawableLeft="@drawable/ic_my_07"
+            android:drawablePadding="@dimen/margin_10"
+            android:layout_marginTop="15dp"
+            android:text="参与活动"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16"/>
+        <TextView 
+            android:id="@+id/mygoods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_10"
+            android:drawableRight="@drawable/im_personal_main_enter_icon"
+            android:drawableLeft="@drawable/ic_my_08"
+            android:drawablePadding="@dimen/margin_10"
+            android:layout_marginTop="1dp"
+            android:text="我发布的商品"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/title_font_size_16"/>
+        
+    </LinearLayout>
+
+    
+
+</ScrollView>

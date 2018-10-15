@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/newPublish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:background="@drawable/white_bg"
+        android:text="@string/publish_new_info"
+        android:textColor="@color/title_bg_blue" />
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_10" >
+
+        <ListView
+            android:id="@+id/publishInfoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/app_bg_color"
+            android:dividerHeight="@dimen/margin_10"
+            android:scrollbars="none" />
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

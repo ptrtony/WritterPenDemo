@@ -1,0 +1,16 @@
+<!--<com.android.bluetown.photodrag.PhotoDragRelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/verticalSlideLayout"-->
+    <!--android:background="#000">-->
+
+<com.wingsofts.dragphotoview.DragPhotoView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scale_pic_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:transitionName="circleImage"/>
+
+<!--&lt;!&ndash;</com.android.bluetown.photodrag.PhotoDragRelativeLayout>&ndash;&gt;-->

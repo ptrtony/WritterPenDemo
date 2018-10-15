@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_blue" >
+
+        <Button
+            android:id="@+id/titleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:onClick="onBack"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/titleMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="付款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_bg_blue"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/paycode_tiaoma"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/barcode"
+                android:layout_width="260dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/barcode_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text=""
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center"
+            android:background="@drawable/paycode_erweima"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/QR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_refresh"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_alignParentBottom="true"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="点击刷新"
+                android:textColor="@color/app_blue" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

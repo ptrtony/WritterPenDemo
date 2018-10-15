@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/itemLy1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/typeCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/modelImg"
+            android:button="@drawable/radio_selector"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/modelImg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeCheck"
+            android:layout_gravity="center_horizontal"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/modelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/modelImg"
+            android:layout_alignRight="@+id/modelImg"
+            android:layout_below="@+id/modelImg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_12"
+            android:layout_marginTop="@dimen/y2"/>
+
+        <ImageView
+            android:id="@+id/newFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/modelImg"
+            android:layout_marginRight="@dimen/margin_20"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_new" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemLy2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_canteen_type_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_20"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/hotModelImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/hotModelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotModelImg"
+            android:layout_marginTop="@dimen/margin_10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_12" />
+    </RelativeLayout>
+
+</RelativeLayout>

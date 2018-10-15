@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我关注的企业"
+        android:drawableRight="@drawable/im_personal_main_enter_icon"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/title_font_size_16"
+        android:padding="@dimen/margin_10"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_15"/>
+    <TextView 
+        android:id="@+id/tiezi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我关注的帖子"
+        android:drawableRight="@drawable/im_personal_main_enter_icon"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/title_font_size_16"
+        android:padding="@dimen/margin_10"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"/>
+
+</LinearLayout>

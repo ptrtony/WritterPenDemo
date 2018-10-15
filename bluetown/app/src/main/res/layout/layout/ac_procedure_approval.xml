@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_tel"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/zone_link_tel"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/zoneTel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/tel_num"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/iv_common_cutoff1"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_tel"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/real_estate_link_tel"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/realEstateTel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/tel_num"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_40"
+            android:text="@string/title"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14" />
+
+        <EditText
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@null"
+            android:hint="@string/input_product_title_hint"
+            android:textColor="@color/font_gray"
+            android:textColorHint="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_14" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_10"
+            android:text="@string/product_type_title"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_10"
+            android:drawableRight="@drawable/more"
+            android:hint="@string/please_select_type"
+            android:textColor="@color/font_gray"
+            android:textColorHint="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_14" 
+            android:layout_marginLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10" >
+
+        <EditText
+            android:id="@+id/approvalContent"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:gravity="top"
+            android:padding="@dimen/margin_10"
+            android:hint="@string/commit_content_tip"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_size_14"
+            android:background="@drawable/white_stroke_bg" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bookBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/blue_darker_btn_bg"
+        android:text="@string/book"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_font_size_16" />
+
+</LinearLayout>

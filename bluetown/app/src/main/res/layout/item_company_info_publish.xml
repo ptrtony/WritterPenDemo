@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/publishInfoLogo"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center_vertical"
+        
+        android:padding="@dimen/margin_10"
+         android:src="@drawable/demand_recruit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/publishInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	    android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/publishInfoCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/margin_5"
+            android:singleLine="true"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_size_12" />
+         <TextView
+            android:id="@+id/publishInfoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/margin_5"
+            android:singleLine="true"
+            android:textColor="@color/compnay_show_type_tag_text_bg"
+            android:textSize="@dimen/font_size_10"/>
+    </LinearLayout>
+
+</LinearLayout>

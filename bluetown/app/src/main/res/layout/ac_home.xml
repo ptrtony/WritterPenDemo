@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--<FrameLayout-->
+        <!--android:id="@+id/homeHeadLy"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" >-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/weatherCondition"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right|top"-->
+            <!--android:layout_marginRight="@dimen/app_right_margin"-->
+            <!--android:layout_marginTop="@dimen/app_right_margin"-->
+            <!--android:background="@drawable/gray_darker_btn_bg"-->
+            <!--android:padding="@dimen/margin_5"-->
+            <!--android:text="35° 晴"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/font_size_14"-->
+            <!--android:visibility="gone" />-->
+    <!--</FrameLayout>-->
+
+    <com.android.bluetown.view.NoScrollGridView
+        android:id="@+id/mainModelGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/x5"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/y6"
+        android:paddingTop="@dimen/y6"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/y6"
+        android:nestedScrollingEnabled="false">
+    </com.android.bluetown.view.NoScrollGridView>
+
+    <!--<com.android.bluetown.view.slideview.SlidingPlayViewWithDot-->
+        <!--android:id="@+id/homeShowView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="75dp" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/newEventLy"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/margin_10"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/moreMsgLy"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:padding="@dimen/margin_10" >-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="公告"-->
+                <!--android:textColor="#999999"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="全部"-->
+                <!--android:textColor="#4990fb" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/activityMsgList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingLeft="@dimen/margin_10"-->
+            <!--android:paddingRight="@dimen/margin_10" />-->
+    <!--</LinearLayout>-->
+
+    
+
+</LinearLayout>

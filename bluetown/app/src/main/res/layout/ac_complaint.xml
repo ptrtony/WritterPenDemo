@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/ac_complaint">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_44"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_weight="1.0"
+                android:text="@string/select_type"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_16"/>
+
+            <RadioGroup
+                android:id="@+id/selectComplaintSuggest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_15"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/complaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiogroup_type_selector"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="@string/complaint_text"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_size_16"
+                    android:checked="true"
+                    android:gravity="center_vertical"/>
+
+                <RadioButton
+                    android:id="@+id/suggest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:button="@drawable/radiogroup_type_selector"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="@string/suggest_text"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_size_16"
+                    android:gravity="center_vertical"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/compnay_detail_divier"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_44"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+            android:paddingLeft="@dimen/margin_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_title"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_16" />
+
+            <EditText
+                android:id="@+id/complaintAddress"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_16"
+                android:hint="@string/address_hint"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:textColorHint="@color/color_949494"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/compnay_detail_divier"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginLeft="@dimen/margin_15"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_44"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/complaint_suggest_title"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complaint_suggest_text_count"
+                    android:textColor="@color/compnay_show_type_tag_text_bg"
+                    android:textSize="@dimen/font_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/compnay_detail_divier"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15"/>
+
+            <EditText
+                android:id="@+id/complaintSuggestContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:background="@drawable/white_stroke_bg"
+                android:gravity="top"
+                android:layout_marginTop="-1dp"
+                android:hint="@string/complaint_suggest_hint"
+                android:maxLength="100"
+                android:textColorHint="@color/color_949494"
+                android:minHeight="100dip"
+                android:padding="@dimen/margin_10"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/margin_30"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/upload_product_pic"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_16"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/complaintImgGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_15">
+        </android.support.v7.widget.RecyclerView>
+        <Button
+            android:id="@+id/complaintCommit"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/blue_darker_btn_bg"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_gravity="center">
+
+    <com.android.bluetown.view.RoundedImageView
+        android:id="@+id/applyImg"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/applyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_10" 
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/add_friend"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/margin_5"/>
+
+</LinearLayout>

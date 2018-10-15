@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+	package
+		ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:2:5-28
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+		ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+		ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:1-96:12
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml:21:5-94:19
+uses-sdk
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+		ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+		ADDED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml
+		INJECTED from D:\project\SmartParkPeriod2\trunk\Src\Android\bluetown\IMLib\AndroidManifest.xml

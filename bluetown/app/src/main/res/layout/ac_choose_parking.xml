@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:background="@color/authentication_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/carNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_smart_parking_small"
+                android:drawablePadding="@dimen/margin_5"
+                android:gravity="center"
+                android:padding="@dimen/margin_15"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@color/authentication_bg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:drawableLeft="@drawable/ic_parking_01"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:text="可选" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:drawableLeft="@drawable/ic_parking_02"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:text="已租" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:drawableLeft="@drawable/ic_parking_03"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:text="已选" />
+            </LinearLayout>
+        </LinearLayout>
+
+       
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"
+                android:horizontalSpacing="@dimen/margin_10"
+                android:numColumns="4"
+                android:paddingBottom="@dimen/margin_15"
+                android:paddingTop="@dimen/margin_15"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/margin_15" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20" >
+
+        <TextView
+            android:id="@+id/tv_parkingSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="请选择一个车位"
+            android:textColor="@color/font_light_gray"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/can_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yuanjiao_blue"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:text="确认车位"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

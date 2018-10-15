@@ -1,0 +1,6 @@
+<com.lesogo.cu.custom.ScaleView.HackyViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewPager_show_bigPic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"/>

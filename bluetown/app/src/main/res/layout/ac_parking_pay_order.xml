@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical" >
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/tip_bg"
+        android:gravity="center"
+        android:padding="@dimen/margin_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请在"
+            android:textColor="@color/orange" />
+
+        <com.android.bluetown.view.CustomDigitalClock
+            android:id="@+id/remaintime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内完成付款，晚了车位就被抢走啦"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin_20" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:background="@drawable/ic_smart_parking" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="¥150"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_20" />
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignLeft="@+id/amount"
+            android:text="智慧园车位包月-订单编号：09098987"
+            android:textColor="#aaaaaa"
+            android:textSize="@dimen/font_size_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/white"
+        android:padding="@dimen/margin_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钱包余额"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/no_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@+id/balance"
+            android:text="余额不足"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_size_12" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/hideView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_15"
+        android:background="@drawable/yuanjiao_blue"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="确认支付"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/cant_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_15"
+        android:background="@drawable/yuanjiao_light_blue"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="确认支付"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/charge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_15"
+        android:background="@drawable/yuanjiao_blue"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="前往充值"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

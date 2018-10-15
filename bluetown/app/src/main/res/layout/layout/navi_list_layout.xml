@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:minWidth="1000dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_10"
+    android:paddingLeft="@dimen/margin_30"
+    android:paddingRight="@dimen/margin_30"
+    android:paddingTop="@dimen/margin_10" >
+
+    <Button
+        android:id="@+id/btn_bd_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/bg_white_bottom_round_selector"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:text="@string/select_bd_anvi"
+        android:textColor="@color/font_light_red"
+        android:textSize="@dimen/font_size_16" />
+    <Button
+        android:id="@+id/btn_gd_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/bg_white_bottom_round_selector"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:text="@string/select_gd_anvi"
+        android:textColor="@color/font_light_red"
+        android:textSize="@dimen/font_size_16" />
+
+    <Button
+        android:id="@+id/btn_qq_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/bg_white_bottom_round_selector"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:text="@string/select_qq_anvi"
+        android:textColor="@color/font_light_red"
+        android:textSize="@dimen/font_size_16" />
+
+    <Button
+        android:id="@+id/btn_navi_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15"
+        android:background="@drawable/blue_darker_btn_bg"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

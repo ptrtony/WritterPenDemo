@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">宁波智慧园</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="net_call_no_network">暂无网络</string>
+    <!-- MainActivity -->
+    <string name="home">园区</string>
+    <string name="game_center">周边餐饮</string>
+    <string name="my_3yx">圈子</string>
+    <string name="setting">我的</string>
+    <string name="scan_text">将二维码/条形码放入框内, 即可自动扫描</string>
+    <!-- LoginActivity -->
+    <string name="login">登录</string>
+    <string name="password">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码：</string>
+    <string name="password1">密码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="new_password">新&#160;&#160;&#160;&#160;密&#160;&#160;&#160;&#160;码：</string>
+    <string name="input_nickname">请输入昵称：</string>
+    <string name="remember_password">记住密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="account_empty">请输入手机号</string>
+    <string name="password_empty">请输入密码</string>
+    <string name="account_format_error">请输入有效的手机号</string>
+    <string name="mail_format_error">请输入有效的邮箱地址</string>
+    <string name="phone_error">手机号码不能少于11位</string>
+    <string name="number_chart_limit">数字字符不能超过30</string>
+    <string name="input_empty_image">请选择图片</string>
+    <string name="newPassword">新密码</string>
+    <string name="account_error">账号错误</string>
+    <string name="password_format_error">请输入有效的密码</string>
+    <string name="password_error">密码错误</string>
+    <string name="login_error">账号或密码错误，请重新输入</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="error_phone">请输入有效的手机号码</string>
+    <!-- RegisterActivity -->
+    <string name="register">注册</string>
+    <string name="company_user">企业级用户</string>
+    <string name="normal_user">普通用户</string>
+    <string name="merchant">商户</string>
+    <!-- OpenShopActivity -->
+    <string name="basicinfo">基本信息</string>
+    <string name="user_name">姓名</string>
+    <string name="person_num">身份证号</string>
+    <string name="company_names">公司名称</string>
+    <string name="bank_name">银行账号</string>
+    <string name="shop_name">店铺名称</string>
+    <string name="upload_shop_pic">上传店铺照片</string>
+    <string name="upload_voucher_pic">上传证件图片</string>
+    <string name="shop_type">店铺类型</string>
+    <string name="household_appliances">家用电器</string>
+    <string name="mother_baby_products">母婴用品</string>
+    <string name="appliances">家居百货</string>
+    <string name="outdoor_activities">活动户外</string>
+    <string name="ambrosia">美味食品</string>
+    <string name="skin_beauty">护肤美容</string>
+    <string name="fashion_girl">时尚女装</string>
+    <string name="digital_burning_guest">数码烧客</string>
+    <string name="shop_intro">店铺介绍</string>
+    <string name="location">宁波市</string>
+    <string name="trade">行业：</string>
+    <string name="cm_support_withdraw">暂不支持提现</string>
+    <!-- PerfectinfoActivity -->
+    <string name="perfect_info">完善资料</string>
+    <string name="company_user_tip_info">注册完成以后，请到线下XX地址去提交线下资料，方便我们更好的进行审核您的资料。</string>
+    <string name="link_phone">联系电话：0574&#8211;278942</string>
+    <string name="company_legal_person_name">企业法人姓名</string>
+    <string name="empty_company_legal_person_name">企业法人姓名不能为空</string>
+    <string name="company_link_method">企业联系方式</string>
+    <string name="empty_company_link_method">企业联系方式不能为空</string>
+    <string name="business_license_number">营业执照编号</string>
+    <string name="empty_business_license_number">营业执照编号不能为空</string>
+    <string name="company_name">单位名称(全称)</string>
+    <string name="empty_company_name">单位名称不能为空</string>
+    <string name="tip">提示</string>
+    <string name="commit">提交</string>
+    <string name="much_comment_tip">操作频繁，请稍后再试！</string>
+    <string name="commit_tip">后台正在审核，请耐心等待&#8230;</string>
+    <string name="commit_refuse_tip">审核拒绝，请重新提交企业信息</string>
+    <string name="commit_success">提交成功</string>
+    <string name="commit_fail">提交失败</string>
+    <!-- RegisterVerifyActivty -->
+    <string name="mobile_num">手机号</string>
+    <string name="mobile_hint">请输入手机号(11位)</string>
+    <string name="empty_mobile">手机号不能为空</string>
+    <string name="error_mobile">手机号输入不正确</string>
+    <string name="msg_verify_code">短信验证码</string>
+    <string name="get_msg_verify_code">发送验证码</string>
+    <string name="msg_verify_code_hint">请输入短信验证码</string>
+    <string name="empty_msg_verify_code">短信验证码不能为空</string>
+    <string name="error_msg_verify_code">验证码不正确，请重新输入</string>
+    <string name="verify_tip">请在60秒内完成验证，超时请点击重新发送</string>
+    <string name="i_agree">我同意</string>
+    <string name="register_pro_name">《宁波智慧园注册协议》</string>
+    <string name="next">下一步</string>
+    <!-- InputPasswordActivity -->
+    <string name="garden_belong">所属园区：</string>
+    <string name="garden_select">请选择你属园区</string>
+    <string name="input_password">输入密码</string>
+    <string name="confirm_password">确认新密码</string>
+    <string name="password_length">(6&#8211;16位字符)</string>
+    <string name="user_name_length1">(1&#8211;30位字符)</string>
+    <string name="input_confirm_password">请再次输入密码</string>
+    <string name="nick">昵称</string>
+    <string name="confirm">确定</string>
+    <string name="gotoAuthentication">前往认证</string>
+    <string name="AuthenticationIng">审核中</string>
+    <string name="noOpenModule">该功能尚未开放，尽情期待</string>
+    <string name="tokenPastDue">token已过期，请重新登录</string>
+    <string name="Authenticationinfo">认证提示</string>
+    <string name="empty_confirm_password">请输入确认密码</string>
+    <string name="less_password">密码请控制在6-16个字符</string>
+    <string name="diff_password">两次输入密码不一致，请重新输入</string>
+    <string name="find_password_success">找回密码成功！</string>
+    <string name="select_garden">请选择所属园区</string>
+    <string name="find_password_fail">找回密码失败！</string>
+    <string name="sex">性别</string>
+    <string name="gender">修改性别</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="register_success">注册成功！</string>
+    <string name="register_fail">注册失败！</string>
+    <!-- ForgetPasswordActivity -->
+    <string name="find_password">找回密码</string>
+    <!-- RegisterProActivity -->
+    <string name="register_pro">注册协议</string>
+    <string name="register_pro_content">\t请先仔细阅读本应用许可协议再使用app应用。阁下一旦使用app应用，即表示同意接受本许可协议的条款约束。\n
+	\t本应用由宁波高新区智慧绿城建设有限公司（以下称“宁波智慧园”）开发，并以非公开方式面向宁波智慧园的客户及员工等特定人群展示资讯。\n
+	\t本应用仅在中国法律许可的情况下使用。本应用不面向除中国以外任何国家、地区、省、市、自治州或其他司法管辖区公民、居民或位于其中的任何人或组织使用；宁波智慧园不承担任何因应用使用方不当使用该应用而造成的任何损失。\n
+	\t本应用仅为提供信息而发布，并不构成任何购买或法律建议与依据，应用阅读方或使用方应就应用内发表的内容咨询独立专业人员的意见。宁波智慧园对此不承担任何责任。\n
+	\t任何人或组织均不得在没有宁波智慧园事先书面允许的情况下，以任何形式、用任何手段抄袭、复制、截屏本应用中的任何部分，或者将本应用中的任何部分发放给任何非公司雇员、官员或中介机构。\n
+	\t本应用内所列示数据或分析均为宁波智慧园从项目公司、公开信息、第三方数据机构或研究报告等来源获得，宁波智慧园已采取合理手段确保应用内的数据或分析于信息发布日仍为合理正确。宁波智慧园不承担应用内信息于发布日后因部分信息出现偏离或错误而造成的任何损失。</string>
+    <string name="index_text">首页</string>
+    <string name="surround_text">周边</string>
+    <string name="circle_text">圈子</string>
+    <string name="mine_text">我的</string>
+    <string name="find">发现</string>
+    <string name="usual">常用</string>
+    <string name="offical">官方</string>
+    <!-- HomeActivity -->
+    <string name="index_search_content">请输入查找内容</string>
+    <string name="more">更多</string>
+    <string name="company_show">园区企业</string>
+    <string name="event_guide">办事指南</string>
+    <string name="company_show1">园区介绍</string>
+    <string name="smart_parking">车位包月</string>
+    <string name="real_time_zone">实时园区</string>
+    <string name="guest_order">临停预约</string>
+    <string name="self_help_service">自助报修</string>
+    <string name="flea_market">跳蚤市场</string>
+    <string name="action_center">活动中心</string>
+    <string name="action_center_details">活动详情</string>
+    <string name="make_friends">交友</string>
+    <string name="transfer_accounts">转账</string>
+    <string name="bill_check">账单</string>
+    <string name="smart_cateen">智慧餐厅</string>
+    <string name="garden_intr">园区介绍</string>
+    <string name="wallet">钱包</string>
+    <string name="hot_model">热门版块</string>
+    <string name="diary_search">日常查询</string>
+    <string name="payment_management">缴费管理</string>
+    <string name="company_info_publish">需求发布</string>
+    <string name="company_growup_help">企业成长帮助</string>
+    <string name="complaint">投诉</string>
+    <string name="yellow_pages">园区黄页</string>
+    <string name="procedure_approval">手续报批</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="zone">宁波智慧园</string>
+    <string name="zone_1">园区一</string>
+    <string name="zone_2">园区二</string>
+    <string name="zone_3">园区三</string>
+    <string name="zone_4">园区四</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="history_check">历史账单</string>
+    <!-- HomeActivity-CompanyShowActivity -->
+    <string name="company_name_search_hint">请输入企业名称</string>
+    <!-- HomeActivity-SmartParkingActivity -->
+    <string name="smart_parking_manager">智能停车管理</string>
+    <!-- HomeActivity-FleaMarketActivity -->
+    <string name="search_content_hint">请输入搜索内容</string>
+    <string name="public_goods">发布商品</string>
+    <!-- HomeActivity-MobileMarketActivity -->
+    <string name="open_shop">我要开店</string>
+    <!-- HomeActivity-PayManagerActivity -->
+    <string name="payment">缴费</string>
+    <!-- HomeActivity-ComplaintActivity -->
+    <string name="lookfor_content_hint">请输入查找内容</string>
+    <!-- HomeActivity-ComplaintActivity -->
+    <string name="complaint_offer">投诉建议</string>
+
+    <!-- HomeActivity-ComplaintActivity -->
+    <string name="park_inside_procedure_approval">园区内部手续报批</string>
+    <!-- SweetAlertDialog对话框相关string -->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">Cancel</string>
+    <!-- HelpActivity -->
+    <string name="help_content">Milan，Milan Milan,Milan solo con te Milan Milan sempre per te 
+
+Camminiamo noi accanto ai nostri eroi 
+sopra un campo verde sotto un cielo blu 
+conquistate vooi una stella in piu 
+ha brillate in nole insieme cantiamo 
+
+Milan Milan solo con te 
+Milan Milan sempre per te 
+
+Con il Milan nel cuore 
+nel profondo deli\&apos;anima 
+un vero amico sele insieme cantiamo 
+Milan Milan solo con te 
+Milan Milan sempre per te 
+
+Con il sogno che la violenza no 
+non ti sporchi maie insieme cantiamo 
+Milan Milan solo con te 
+Milan Milan sempre per te </string>
+    <!-- CompanyDetailsActivity -->
+    <string name="company_name_content">浙江创文文化创意有限公司</string>
+    <string name="company_address_content">浙江市文化路98号14楼1402室</string>
+    <string name="company_distance_content">距离100米</string>
+    <string name="company_type_content">房地产</string>
+    <string name="company_details">企业详情</string>
+    <string name="address">地址：</string>
+    <string name="tel">电话：</string>
+    <string name="address_name">上海市广纪路83号B栋4楼</string>
+    <string name="tel_num">029&#8211;324242</string>
+    <string name="company_tag">房地产公司</string>
+    <string name="company_details_title">关于此企业</string>
+    <string name="attention_company">关注该企业</string>
+    <string name="attention_success">关注成功！</string>
+    <string name="company_details_content">&#160;&#160;&#160;&#160;&#160;该企业隶属于中国电力集团下的一个分支，成立于2003年。自创立之初，就用最新的科技、最有竞争力的创新动力，在行业中一直表现着领头羊的角色。在发展过程中，该企业虚心纳士，以其优厚的待遇、人性化的管理政策，吸引了大批的有志之士加入该公司。人才是企业的立足之本，也是公司发展的动力之源。最近该公司即将上市...</string>
+    <string name="collect_success">收藏成功！</string>
+    <string name="cancel_collect">取消收藏成功！</string>
+    <!-- HistoryServiceActivity -->
+    <string name="self_service_type">故障类型</string>
+    <string name="history_self_service">历史报修</string>
+    <string name="self_service_type_content">水龙头</string>
+    <string name="self_service_date">上门日期</string>
+    <string name="self_service_time">上门时间</string>
+    <string name="self_service_year">年</string>
+    <string name="self_service_month">月</string>
+    <string name="self_service_day">日</string>
+    <string name="self_service_afternoon">下午</string>
+    <string name="self_service_noon">上午</string>
+    <string name="self_service_day_all">均可</string>
+    <string name="telphone_num_title">手机号码</string>
+    <string name="telphone_num">15818622876</string>
+    <string name="service_fault_intro">报修故障文字说明/备注</string>
+    <string name="service_fault_intro_hint">不超过50字，包括标点</string>
+    <string name="service_fault_intro_hint1">不超过500字，包括标点</string>
+    <string name="upload_pic">上传图片</string>
+    <string name="address_title">地址</string>
+
+    <string-array name="faultTypeArray">
+        <item>水龙头</item>
+        <item>煤气</item>
+        <item>油烟机</item>
+        <item>电闸</item>
+        <item>开锁</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="faultTypeArray2">
+        <item>500</item>
+        <item>200</item>
+    </string-array>
+
+    <string name="image_limit">最多只能选6张图片</string>
+    <string name="gallery">从相册选择</string>
+    <string name="camera">拍照</string>
+    <string name="gender_boy">男</string>
+    <string name="gender_girl">女</string>
+    <string name="cancel">取消</string>
+    <string name="gender_confirm">确定</string>
+    <string name="fault_type_empty">请先选择故障类型</string>
+    <string name="commit_date_empty">请选择上门时间</string>
+    <string name="address_empty">请输入地址</string>
+    <string name="tel_empty">请输入手机号码</string>
+    <string name="fault_explain_empty">请输入报修故障说明</string>
+    <string name="dealing">报修中</string>
+    <string name="info_perfect">报修成功</string>
+    <string name="self_service_type_title">报修故障类型：</string>
+    <string name="deal_with">处理中</string>
+    <string name="un_deal_with">未处理</string>
+    <string name="dealed_with">已处理</string>
+    <string name="deal_with_date">2015.08.06</string>
+
+    <!-- HistoryServiceDetailActivity -->
+    <string name="history_self_service_details">历史维护报修详情</string>
+    <string name="service_details">报修详情</string>
+    <string name="fault_explain">报修故障说明：</string>
+    <string name="history_service_date">上门日期：</string>
+    <string name="history_service_time">上门时间：</string>
+    <string name="history_service_phone">手机号码：</string>
+    <string name="service_address">虹口区江湾镇小区广纪路838号B栋4楼401</string>
+    <string name="fault_explain_content">水龙头一直在滴水，不知道什么情况水龙头一直在滴水，不知道什么情况。</string>
+    <string name="fault_img">故障照片：</string>
+    <string name="unloaded">已上传</string>
+    <string name="un_unload">无上传图片</string>
+    <string name="dealed">后台已处理</string>
+    <string name="deal_with_feedback">处理反馈：</string>
+    <string name="feedback_content">师傅已经上门处理，已经修好。十分感谢您对物业的信赖！</string>
+    <string name="handle_score">处理评分</string>
+    <string name="one_fen">1分</string>
+    <string name="two_fen">2分</string>
+    <string name="three_fen">3分</string>
+    <string name="four_fen">4分</string>
+    <string name="five_fen">5分</string>
+    <string name="grade_success">感谢您的打分，谢谢！</string>
+    <string name="un_grade">请打分以后再进行提交。</string>
+    <string name="job_51">51job</string>
+    <string name="job_to_job">职来职往</string>
+    <string name="ninbo_city">宁波政府</string>
+    <string name="zone_publish">园区发布</string>
+    <string name="publish_time">【2015-3-12】</string>
+    <string name="publish_content">园区有新政策，企业HR看过来啦</string>
+    <string name="company_grow_help_detail"></string>
+    <!-- MyWalletActivity -->
+    <string name="bankcard">银行卡</string>
+    <string name="balance">余额</string>
+    <string name="recharge">充值</string>
+    <string name="saoyisao">扫一扫</string>
+    <string name="QR">付款码</string>
+    <string name="paysetup">支付设置</string>
+    <string name="change_pay_psw">修改支付密码</string>
+    <string name="small_pay">小额免密支付</string>
+    <string name="small_pay_info">小额交易使用手机付款，无需输入支付密码。</string>
+    <string name="no_psw_pay">免密金额</string>
+    <string name="set_pay_psw">设置支付密码</string>
+    <string name="set_pay_psw_again">请再次输入以确认支付密码</string>
+    <string name="account">账号</string>
+    <string name="input_account">请输入转账人账号</string>
+    <string name="account_count">金额</string>
+    <string name="input_account_count">请输入转账金额</string>
+    <string name="input_recharge_count">请输入金额</string>
+    <string name="biggest_balance">余额最大转账金额:</string>
+    <string name="input_pay_count">请输入支付金额</string>
+    <string name="biggest_balance_pay">余额最大支付金额:</string>
+    <string name="transfer_success">转账成功</string>
+    <string name="weixin_pay">微信支付</string>
+    <string name="alipay">支付宝</string>
+    <string name="confirm_recharge">确认充值</string>
+
+    <!-- MyInfoActivity -->
+    <string name="account_info">账户信息</string>
+    <string name="my_QR">我的二维码</string>
+    <string name="about_app">关于软件</string>
+    <string name="help">帮助</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="change_psw">登录密码</string>
+    <string name="gesture_psw">手势密码锁</string>
+    <string name="change_gesture_psw">修改手势密码锁</string>
+    <string name="gesture_psw_info">开启后，进入钱包需要验证手势密码。</string>
+    <string name="msg_setup">消息设置</string>
+    <string name="sound_setup">声音</string>
+    <string name="new_friend">新好友</string>
+    <string name="receive_comment">收到评论</string>
+    <string name="activity_notice">活动提醒</string>
+    <string name="telephone_num">手机号</string>
+    <string name="email">电子邮箱</string>
+    <string name="authentication">认证</string>
+    <string name="real_name">真实姓名</string>
+    <string name="input_real_name">请输入您的真实姓名</string>
+    <string name="id_card">身份证号</string>
+    <string name="input_id_card">请输入您身份证号</string>
+    <string name="choose_garden">选择园区</string>
+    <string name="choose_company">选择公司</string>
+    <string name="choose_pic">证明图片</string>
+    <string name="pic_info">图片要求：为保证您账号安全，请点击以上示意图上传本人身份证证件正反面照以及所属公司敲章证明。</string>
+
+    <!-- FleaMarketActivity -->
+    <string name="product_type">产品分类</string>
+    <string name="order_normal">默认排序</string>
+    <string name="product_name">九成自行车</string>
+    <string name="product_price">￥899</string>
+    <string name="sale_out">下架</string>
+    <string name="sale_out_success">下架成功！</string>
+    <!-- ProductDetailActivity -->
+    <string name="product_detail">商品详情</string>
+    <string name="collect">收藏</string>
+    <string name="collect_cancel">取消收藏</string>
+    <string name="product_details_name">2015新款抱抱熊</string>
+    <string name="product_details_price">￥88</string>
+    <string name="priase">点赞</string>
+    <string name="comment">评论</string>
+    <string name="comment_success">评论成功！</string>
+    <string name="is_seller">我是卖家</string>
+    <string name="link_seller">联系卖家</string>
+    <string name="product_intro">商品介绍</string>
+    <string name="product_intro_content">2014年情人节我买的这款ipad air，当时买回来是打算送给女朋友的，可惜情人节当天我们分手了。所以这个ipad就一直留着没有用，现在就处理掉吧...</string>
+    <string name="user_comment_name">杀阡陌</string>
+    <string name="user_comment_content">看起来还挺清新！</string>
+    <string name="comment_time">15:36</string>
+    <string name="comment_date_time">2015-08-11 15:36</string>
+    <string name="reply">回复</string>
+    <string name="seller_reply">卖家回复：</string>
+    <string name="seller_reply_content"></string>
+    <string name="reply_hint">说点什么吧</string>
+    <string name="comment_content_empty">评论內容不能为空！</string>
+    <string name="reply_content_empty">回复内容不能为空！</string>
+    <string name="seller_comment_tip">卖家不能评论，只能回复！</string>
+    <!-- OthersInfoActivity -->
+
+    <string name="others_info">他人资料</string>
+    <string name="mail">1028150450@qq.com</string>
+    <string name="name">姓名</string>
+    <string name="nickname">昵称</string>
+    <string name="birthday">生日</string>
+    <string name="name_person">姓名：</string>
+    <string name="nickname_person">昵称：</string>
+    <string name="birthday_person">生日：</string>
+    <string name="name_content">小野丽莎</string>
+    <string name="nickname_content">Lisa</string>
+    <string name="birthday_content">2015.12.3</string>
+    <string name="add_friend">加为好友</string>
+    <string name="delete_friend">删除好友</string>
+    <string name="reAuthenticatn">重新认证</string>
+    <string name="confirm_delete_title">是否确定删除该好友？</string>
+    <string name="confirm_delete_content">同删除好友以及聊天记录</string>
+    <string name="other_publish_goods">他发布的商品</string>
+    <string name="add_success">添加成功！</string>
+    <string name="publish_product_name">名称</string>
+    <string name="publish_product_name_hint">请输入商品名称</string>
+    <string name="link_tel">联系电话</string>
+    <string name="link_tel_hint">请输入联系电话</string>
+    <string name="product_price_hint">请输入商品价格</string>
+    <string name="product_type_hint">请选择分类</string>
+    <string name="norms_type_hint">请输入商品规格（例如：每件）</string>
+    <string name="number">库存</string>
+    <string name="number_tip">请库存数量</string>
+    <string name="product_price_title">价格</string>
+    <string name="product_type_title">分类</string>
+    <string name="norms_type_title">规格</string>
+    <string name="upload_product_pic">上传商品图片（不超过6张）</string>
+    <string name="product_des">商品描述</string>
+    <string name="product_des_content_hint">请输入商品描述（字数限制在500字以内）</string>
+    <string name="product_des_content_tip">商品描述不能超过500字</string>
+    <string name="publish">发布</string>
+    <string name="publish_perfect_info">请完善标记*内容再提交</string>
+    <string name="publish_perfect_info1">请完善*资料后再提交</string>
+    <string name="publish_group_perfect_info1">请完善群资料后再提交</string>
+    <string name="image_choose_info">图片不能为空,请选择图片</string>
+    <string name="publish_success">发布成功</string>
+    <string name="publish_success1">创建成功</string>
+    <string name="apply_success">报名成功</string>
+
+    <!-- DiarySearchActivity -->
+    <string name="mail_check">快递查询</string>
+    <string name="traffic_check">违章查询</string>
+    <string name="diary_search_service_cn">日常查询服务</string>
+    <string name="diary_search_service_en">Dialy query service</string>
+    <!-- CompanyInfoPublicActivity -->
+    <string name="publish_new_info">发布新需求</string>
+    <string name="publish_info_content">紧急招聘IOS开发/Android开发，高新聘请</string>
+    <string name="publish_info_company">宁波畅游游戏有限公司</string>
+    <string name="publish_info_content_time">2015.08.17 10:00</string>
+    <string name="demand_details">需求详情</string>
+    <string name="deadline">截止日期：</string>
+    <string name="deadline_date">2015.08.17</string>
+    <string name="publish_info_title">标题：</string>
+    <string name="publish_info_title_content">招聘Android开发工程师一名</string>
+    <string name="publish_info_demand_content">岗位职责: \n
+1、负责Android手机客户端软件的技术设计和研发\n
+2、Android平台框架层面的开发维护以及扩展\n
+3、负责Android项目的架构设计、方案的制定\n
+4、编写设计开发及实现文档，根据产品功能需求设计并完成软件实现\n
+联系电话：023-890353443</string>
+    <string name="collect_demand">收藏该需求</string>
+    <string name="collected">已收藏</string>
+    <string name="recruit">招聘</string>
+    <string name="search_for">查询</string>
+    <string name="search_for_success">查询成功！</string>
+    <string name="demand_success">恭喜您发布成功！</string>
+    <string name="info_perfect_tip">发布的需求需要后台审核后方可在列表页展示</string>
+    <string name="demand_publish">需求发布</string>
+    <string name="publish_demand">发布需求</string>
+    <string name="title">标题</string>
+    <string name="title_hint">请输入标题（15字以内）</string>
+    <string name="demand_type">需求类型</string>
+    <string name="demand_deadline">需求截止时间</string>
+    <string name="demand_content_hint">请填写需求详情（500字以内）</string>
+    <string name="info_unperfect_tip">请完善资料后再提交</string>
+    <string name="demand_title_empty">标题不能为空</string>
+    <string name="demand_title_length_tip">标题长度请控制在15字以内</string>
+    <string name="demand_des_empty">需求描述不能为空</string>
+    <string name="demand_type_empty">需求类型不能为空</string>
+    <string name="demand_des_length_tip">详情长度请控制在500字以内</string>
+    <string name="demand_recruit">招聘</string>
+    <string name="demand_study">融资</string>
+    <string name="demand_sale">租赁</string>
+    <string name="demand_peo">转让</string>
+    <string name="demand_outing">产品发布</string>
+    <string name="demand_makefriends">购买</string>
+    <string name="demand_meeting">活动</string>
+    <string name="demand_others">其他</string>
+    <!-- ComplaintActivity -->
+    <string name="select_type">选择类型</string>
+    <string name="complaint_text">投诉</string>
+    <string name="suggest_text">建议</string>
+    <string name="address_hint">请输入地址</string>
+    <string name="complaint_suggest_title">填写说明投诉/建议</string>
+    <string name="complaint_suggest_text_count">100字</string>
+    <string name="complaint_suggest_deal_reply">请输入投诉信息/建议</string>
+    <string name="complaint_suggest_hint">请输入投诉信息/建议</string>
+    <string name="suggest_deal_reply">已经及时处理此问题，感谢您宝贵的意见……</string>
+    <string name="type_empty">请选择类型</string>
+    <string name="complaint_suggest_reason_empty">投诉/建议说明不能为空</string>
+    <string name="history_complaint_suggest">历史投诉建议</string>
+    <string name="complaint_suggest_details">投诉建议详情</string>
+    <string name="complaint_address">投诉地址：</string>
+    <string name="complaint_intro">投诉说明：</string>
+    <string name="advise_address">建议地址：</string>
+    <string name="advise_intro">建议说明：</string>
+    <string name="complaint_pic">照片：</string>
+    <string name="complaint_content">小区里的晚上路灯太暗了</string>
+    <!-- PaymentActivity -->
+    <string name="payment_location">上海</string>
+    <string name="property_fee">物业费</string>
+    <string name="property_fee_en">property fee</string>
+    <string name="water_rate">水费</string>
+    <string name="water_rate_cn">water rate</string>
+    <string name="electric_charge">电费</string>
+    <string name="electric_charge_en">electric charge</string>
+    <string name="coal_gas">煤气</string>
+    <string name="coal_gas_en">coal gas</string>
+    <string name="credit_card_payments">信用卡还款</string>
+    <string name="credit_card_payments_en">credit card payments</string>
+    <!-- CircleActivity -->
+    <string name="recommend_circle">推荐圈子</string>
+    <string name="add_info">+加入</string>
+    <string name="car_pooling">拼车</string>
+    <string name="car_pooling_peos">2340</string>
+    <string name="car_pooling_title">省钱省油又环保 拼拼拼</string>
+    <string name="park_notice">园区公告</string>
+    <string name="park_notice_title">来自江南的婉约情怀：宁波智慧园</string>
+    <string name="park_notice_time">2015.08.17 19:35</string>
+    <string name="circle_details">圈子详情</string>
+    <string name="my_attention_post">我关注的帖子</string>
+    <string name="top">置顶</string>
+    <string name="top_post_content">周末大梅沙野餐，欢迎大家一起……</string>
+    <string name="post_user">天下无敌</string>
+    <string name="post_date">20分钟前</string>
+    <string name="add_circle_success">加入圈子成功！</string>
+    <string name="quit_circle_success">退出圈子成功！</string>
+    <string name="add_circle_tip">您尚未加入该圈子，请先加入后在尝试发帖！</string>
+    <string name="post_comment_count">20</string>
+    <string name="post_title">狗狗郁闷的时候该怎么处理呢？</string>
+    <string name="post_content">我可是个好主人，萌姐小时候出去玩为了安全，绝对不会松，为什么还会撒手没呢？有一天，萌姐突然咬住我的手，我手痛，一下子条件反射的松开了，萌姐跟越狱一样拼命的跑，我急的手机都掉在地上了，手机不管了，拼命的追！追的我快吐血了，才追到！还好有好心人帮我拣手机啊！</string>
+    <string name="post_img_count">共6张</string>
+    <string name="publish_post">发圈子</string>
+    <string name="input_publish_post_title">请输入标题……</string>
+    <string name="input_publish_post_content">请输入内容(限制在500字之内)……</string>
+    <string name="publish_post_content_commit_error">请输入内容</string>
+    <string name="post_details">帖子详情</string>
+    <string name="post_user_type">楼主</string>
+    <string name="replay_post">回帖</string>
+    <string name="attention">关注</string>
+    <string name="follow_post">跟帖</string>
+    <string name="follow_post_content">请输入跟帖内容</string>
+    <string name="search">搜索</string>
+    <!-- GuestAppointmentActivity -->
+    <string name="input_guest_info">填写访客信息</string>
+    <string name="appoint_tip">提示：预约只能提前2小时进行</string>
+    <string name="appoint_count_tip">明日线上可预约剩余车辆为:8 您可以进行预约</string>
+    <string name="appoint_system_tip">提示：如果预约成功，在该时间段，访客没有到来，系统将自动取消该预约</string>
+    <string name="car_num">车牌号码,多个车牌号请用","分割</string>
+    <string name="car_num_1">车牌号码</string>
+    <string name="car_num_tip">车牌号无效</string>
+    <string name="appoint_persons">访客人数</string>
+    <string name="select_appoint_persons">请选择访客人数</string>
+    <string name="guest_name">访客姓名</string>
+    <string name="parking_lot_no">停车场编号</string>
+    <string name="link_method">联系电话</string>
+    <string name="ownerName">车主姓名：</string>
+    <string name="guest_date">访客时间</string>
+    <string name="guest_apponit_history">访客预约历史</string>
+    <string name="guest_apponit_history_details">访客预约历史详情</string>
+    <string name="appoint_success">预约成功</string>
+    <string name="zhunshi_arrive">按时到达</string>
+    <string name="appoint_fail">预约失败</string>
+    <string name="appoint_fail1">过期未到</string>
+    <string name="appoint_success_title">车位预约成功</string>
+    <string name="appoint_fail_title">抱歉，预约失败</string>
+    <string name="appoint_fail_reason">失败原因：</string>
+    <string name="appoint_fail_reason_content">系统故障/车位已满</string>
+    <string name="book_info_title">预约信息如下：</string>
+    <string name="car_number">车牌号码</string>
+    <string name="visitor_count">访客人数</string>
+    <string name="visitor_count_tip">请输入有效的数字</string>
+    <string name="visitor_name">访客姓名</string>
+    <string name="link_way">联系方式</string>
+    <string name="visite_time">预约到访时间</string>
+    <string name="commite_time">提交时间</string>
+    <string name="notes">备注</string>
+    <string name="guest_confirm">确定预约</string>
+    <string name="guest_appoint_sucess">访客预约成功</string>
+    <string name="guest_appoint_fail">访客预约失败</string>
+    <string name="appoint_into_tip">请全部填写必填资料再进行提交</string>
+    <string name="zone_procedure_approval">园区内部手续报批</string>
+    <string name="zone_link_tel">园区联系电话：</string>
+    <string name="real_estate_link_tel">物业联系电话：</string>
+    <string name="please_select_type">请选择分类</string>
+    <string name="input_product_title_hint">请输入商品标题</string>
+    <string name="book">预定</string>
+    <string name="commit_content_tip">请输入提交内容（限制在500字之内）……</string>
+    <string name="book_success">预定成功</string>
+    <string name="zone_name_title">园区内部分类名</string>
+    <string name="zone_approva_content">我司申请在园区内部于2015年9月18日搭建一个展台。展台展示内容为我司最新开发出来的酒类以及甜品，目的在于招商引资，希望物业能够同意，谢谢～</string>
+    <string name="zone_approva_refuse_content">近期园区内部活动较多，展位以及档期已经排满</string>
+    <string name="refuse">拒绝</string>
+    <string name="pass">通过</string>
+    <string name="auditing">审核中</string>
+    <string name="approval_refuse_reason">后台拒绝原因：</string>
+    <string name="hostory_approval">历史审批</string>
+    <!-- ParkYellowPageActivity -->
+    <string name="park_yellow_item_name">天天瑜伽馆</string>
+    <string name="park_yellow_details">黄页详情</string>
+
+    <!-- MakeFriendsActivity -->
+    <string name="msg">消息</string>
+    <string name="friend_group">好友</string>
+    <string name="add_friends">加好友</string>
+    <string name="add_group">加入群</string>
+    <string name="create_group">创建群</string>
+    <string name="quit_login">退出登录</string>
+    <string name="search_empty">搜索内容不能为空</string>
+    <string name="add">加入</string>
+    <string name="online">在线</string>
+    <string name="friend_search_title">搜索出來的列表</string>
+    <string name="add_text">添加</string>
+    <string name="send">发送</string>
+    <string name="send_success">发送成功</string>
+    <string name="agree">同意</string>
+    <string name="verfy_msg">验证消息</string>
+    <string name="friend_request_msg">好友请求</string>
+    <string name="clear_msg">清空</string>
+    <string name="clear_msg_success">清空后将无法恢复，确认清空吗？</string>
+    <string name="clear_success">清空成功！</string>
+    <string name="delete_quit">删除并退出</string>
+    <string name="confirm_delete_group_title">是否确定退出该群？</string>
+    <string name="quit_success">退出成功！</string>
+    <string name="dimiss_group">解散</string>
+    <string name="confirm_dimiss_group_title">是否确定解散该群？</string>
+    <string name="dimiss_success">解散成功！</string>
+    <!-- 交友 -->
+    <string name="invite_group_member_search_hint">请输入您要查找的好友</string>
+    <string name="finish">完成</string>
+    <string name="my_group">我的群组</string>
+    <string name="search_friend_hint">搜索好友</string>
+    <string name="nearly_person">附近的人</string>
+    <string name="search_friend_hint1">输入您要搜索的姓名/昵称/手机号</string>
+    <string name="add_group_title">加入群</string>
+    <string name="search_group_hint">输入您要搜索的群昵称</string>
+    <!-- ActionCenterActivity -->
+    <string name="take_part_in">报名</string>
+    <string name="taked_part_in">已报名</string>
+    <string name="start_time_title">活动开始时间：</string>
+    <string name="end_time_title">报名截止时间：</string>
+    <string name="action_ended">报名时间已截止！</string>
+    <!-- SurroundingCanteenActivity周边餐饮 -->
+    <string name="canteen_search_hint">请输入您想查找的商家</string>
+    <string name="canteen_type_1">美食</string>
+    <string name="canteen_type_2">电影</string>
+    <string name="canteen_type_3">酒店</string>
+    <string name="canteen_type_4">KTV</string>
+    <string name="canteen_type_5">足疗</string>
+    <string name="canteen_type_6">丽人</string>
+    <string name="canteen_type_7">门票</string>
+    <string name="canteen_type_8">精品购</string>
+    <string name="merchant_details_title">商家详情</string>
+    <string name="canteen_details">餐厅详情</string>
+    <string name="shop_gallery">店内相册</string>
+    <string name="merchant_info">商家信息</string>
+    <string name="dailry_dishes">热门推荐</string>
+    <string name="boss_recommend">老板推荐菜</string>
+    <string name="string_sales_all">综合排序</string>
+    <string name="string_sales_city">全城分类</string>
+    <string name="string_sales_class">全部分类</string>
+    <string name="hot_merchant">热门商家</string>
+    <string name="call_up_tip">确定要拨打电话吗？</string>
+    <string name="map">地图</string>
+    <string name="navigation">开始导航</string>
+    <string name="comment_list">点评</string>
+    <string name="is_file">该图片已存在，是否重新下载</string>
+    <string name="order">点菜</string>
+    <string name="book_seat">订座</string>
+    <string name="recommend_dish">餐厅推荐菜</string>
+    <string name="again">来一份</string>
+    <string name="select_ok">选好了</string>
+    <string name="classify">分类</string>
+    <string name="share">分享</string>
+    <string name="sure">确认</string>
+    <string name="online_book_title">在线预定</string>
+    <string name="select_dinner_time">选择就餐时间</string>
+    <string name="selete_dinner_time_tip">请选择预订就餐时间</string>
+    <string name="sex_women">女士</string>
+    <string name="sex_man">先生</string>
+    <string name="name_hint">输入您的姓名</string>
+    <string name="linkmethod_hint">输入您的联系方式</string>
+    <string name="special_request_hint">请输入备注（30个字）</string>
+    <string name="book_order">预定点菜</string>
+    <string name="continue_order">继续点菜</string>
+    <string name="please_notice">请注意</string>
+    <string name="dinner_tip_1"> 1）请准时到店消费，逾时请提前服务店内电话延后  </string>
+    <string name="dinner_tip_2"> 2）预订定金不找零，不退款  </string>
+    <string name="dinner_tip_3"> 3）如存在商家优惠活动，具体规则按照店内说明 </string>
+    <string name="pay_deposit">立即支付</string>
+    <string name="number_of_people">人数不限</string>
+    <string name="unlimited_time">时间不限</string>
+    <string name="more_selete_date">更多时间选择</string>
+    <string name="month_and_day">%1$s.%2$s</string>
+    <string name="order_finish">都已经被预约了亲！</string>
+    <string name="can_apponit">还可以预约哦亲！</string>
+    <string name="how_many_hours_ago">%1$s小时前</string>
+    <string name="how_many_minutes_ago">%1$s分钟前</string>
+    <string name="how_many_seconds_ago">%1$s秒前</string>
+    <string name="just_now">刚刚</string>
+    <string name="selete_date_title">选择日期</string>
+    <string name="merchant_name_empty_tip">请输入商家名称</string>
+    <string name="user_name_empty_tip">请输入您的姓名</string>
+    <string name="link_method_empty">请输入您的联系方式</string>
+    <string name="price_empty">预定金额不能为空</string>
+    <string name="order_close_tip">订单将在30分钟内自动关闭，请尽快付款</string>
+    <string name="ordered_dish">已点菜单</string>
+    <string name="confirm_pay">确认支付</string>
+    <string name="pay_method">支付方式</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="pay_success">支付成功</string>
+    <string name="book_orderlist">预定订单</string>
+    <string name="book_order_dish">预定点菜</string>
+    <string name="pay_success_tip">亲，预约成功，按时赴约哦~</string>
+    <string name="xixi">(*^__^*)</string>
+    <string name="order_list_all">全部</string>
+    <string name="order_list_trading">交易中</string>
+    <string name="order_list_closed">已关闭</string>
+    <string name="order_list_finished">已完成</string>
+    <string name="my_book">我的预订</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_with_dishes_detail">预订点菜详情</string>
+    <string name="cancel_order_tip">是否确定取消该订单？</string>
+    <string name="fee">%1$.2f</string>
+    <string name="my_order">我的预订</string>
+    <string name="dish_order">点菜订单</string>
+    <string name="str_search_history">历史记录</string>
+    <string name="str_popular_restaurants">热门餐厅</string>
+    <string name="list_show">列表显示</string>
+    <string name="merchant_no_city_tip">该商家不在您所在的城市，无法导航</string>
+
+    <!-- 提示信息 -->
+    <string name="cancel_success">取消成功</string>
+    <string name="cancel_collect_success">取消收藏</string>
+    <string name="cancel_attentionsuccess">取消关注</string>
+    <string name="login_info_tip">您尚未登录，请登录</string>
+    <string name="joined_in">已加入</string>
+    <string name="joined_in_success">加入成功！</string>
+    <string name="apply_for_success">申请成功！</string>
+    <string name="dish_succss">点菜成功！</string>
+    <string name="book_seat_success">订座成功</string>
+    <string name="server_error">网络繁忙，请稍后再试</string>
+    <string name="user_limit">该用户操作不当，</string>
+    <string name="load_waitting">正在加载，请稍后……</string>
+    <string name="get_code_error">获取手机验证码失败！</string>
+    <string name="company_limite">只有企业用户才可以使用！</string>
+    <string name="authentic_limit">认证通过后方可使用</string>
+    <string name="un_appoint_tip">提示：预约只能提前2小时进行</string>
+    <string name="un_apponit_carport">抱歉，线上可预约剩余车位为：0</string>
+    <string name="grades_success">评分成功！</string>
+    <string name="grades_fail">评分失败！</string>
+    <string name="more_info">敬请期待，二期更精彩</string>
+    <string name="attentioned">已关注</string>
+    <string name="input_action_hint">请输入活动名称</string>
+    <string name="no_dishes">暂无推荐菜</string>
+    <string name="order_status_unpaid">未付款</string>
+    <string name="order_status_trading">交易中</string>
+    <string name="order_status_arrived">已到店</string>
+    <string name="order_status_closed">已关闭</string>
+    <string name="order_status_finished">已完成</string>
+    <string name="make_payment">立即付款</string>
+    <string name="book_again">再订</string>
+    <string name="add_more">追加</string>
+    <string name="ums_title">银联支付</string>
+    <string name="input_memo_tip">请输入备注信息</string>
+    <string name="earnest">定金</string>
+    <string name="select_bd_anvi">百度地图</string>
+    <string name="select_gd_anvi">高德地图</string>
+    <string name="select_qq_anvi">腾讯地图</string>
+    <!-- 个人中心 -->
+    <string name="person_info">个人中心</string>
+    <string name="person_infos">个人资料</string>
+    <string name="user_name_empty">用户名不能为空</string>
+    <string name="user_name_length">用户名长度不能超过10</string>
+    <string name="user_nick_length">用户昵称长度不能超过10</string>
+    <string name="user_nick_empty">用户昵称不能为空</string>
+    <string name="telp_empty">手机号不能为空</string>
+    <string name="eamil_empty">邮箱地址不能为空</string>
+    <string name="birthday_empty">生日不能为空</string>
+    <string name="headImg_empty">用户图像不能为空</string>
+    <string name="mine">我的</string>
+    <!-- 刷新提示语 -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pull_to_refresh_release_down_label">释放更新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新&#8230;</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="no_data">暂无数据</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_last_time">上次更新时间:</string>
+    <string name="xlistview_footer_hint_ready">载入更多</string>
+    <string name="xlistview_footer_hint_normal">载入更多</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载···</string>
+    <string name="Send_the_following_pictures">Send the following pictures?</string>
+    <!-- 视频监控的相关提示 -->
+    <string name="line_unavailable">No available line,please click button to fetch line list!</string>
+    <string name="serveraddr_empty_tip">Server is empty !</string>
+    <string name="getline_suc_tip">Getting line success!</string>
+    <string name="getline_fail_tip">Getting line failed,%s</string>
+    <string name="login_suc_tip">Login success!</string>
+    <string name="fetchline_process_tip">Fetching line list...</string>
+    <string name="login_process_tip">Logging in process...</string>
+    <string name="no_data_tip">No data.</string>
+    <string name="fetch_resource_suc">Fetching resource success!</string>
+    <string name="fetch_linelist_failed">Fetching line list failed.</string>
+    <string name="login_failed">Login failed,%s</string>
+    <string name="fetch_reslist_failed">Fetching resource list failed,%s</string>
+    <string name="cloud_ctrl">Cloud Platform Control </string>
+    <string name="start_ctrl">Start 云台control </string>
+    <string name="stop_ctrl">Stop 云台control </string>
+    <string name="stream_choose">Choose a stream</string>
+    <string name="fetch_line">Fetch line</string>
+    <!-- 网络 -->
+    <string name="net_no">无网络连接，请稍后重试</string>
+    <string name="gallery_name">相册名称</string>
+    <string name="scan_gallery">浏览相册</string>
+    <string name="image_scan">图片展示</string>
+    <!-- 更新 -->
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <!--微信支付-->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!--权限-->
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_GET_ACCOUNTS】</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_READ_PHONE_STATE】</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_CALL_PHONE】</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_CAMERA】</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_ACCESS_FINE_LOCATION】</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_ACCESS_COARSE_LOCATION】</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_READ_EXTERNAL_STORAGE】</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_WRITE_EXTERNAL_STORAGE】</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能。\n请手动开启权限:\n【PERMISSION_RECORD_AUDIO】</string>
+
+
+    <!--other-->
+    <string name="format_time_year" formatted="false">%s年前</string>
+    <string name="format_time_month" formatted="false">%s个月前</string>
+    <string name="format_time_day" formatted="false">%s天前</string>
+    <string name="format_time_hour" formatted="false">%s小时前</string>
+    <string name="format_time_minute" formatted="false">%s分钟前</string>
+    <string name="format_time_sec">刚刚</string>
+
+
+    <string name="car_seat_zero">当前预约已满</string>
+    <string name="area_is_close">该区域未开放</string>
+
+    <string name="my_has_too_bottom_line">"-------我也是有底线的-------"</string>
+
+    <string name="network_not_available">网络不可用</string>
+    <string name="fr_chat_room_join_failure">加入聊天室失败</string>
+    <string name="fr_chat_room_one">聊天室 I</string>
+    <string name="blue_identity_user">你已被认证为深蓝智家用户</string>
+    <string name="line_into">直接进入</string>
+    <string name="submit_company_massage">提交企业信息</string>
+</resources>

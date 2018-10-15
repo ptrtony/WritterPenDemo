@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="17dp">
+
+
+    <com.android.bluetown.view.RoundImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        android:src="@drawable/ic_msg_empty"
+        app:type="round"/>
+
+    <TextView
+        android:id="@+id/tv_hot_event_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="五一，一起去游玩"
+        android:textSize="@dimen/font_size_16"
+        android:layout_toLeftOf="@+id/btn_join_in"/>
+
+    <TextView
+        android:id="@+id/tv_event_going"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hot_event_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_identity_cornel"
+        android:padding="@dimen/x2"
+        android:text="进行中"
+        android:textColor="@color/title_bg_blue"
+        android:textSize="@dimen/font_size_10"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_event_join_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hot_event_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@+id/tv_event_going"
+        android:text="已有21人参与"
+        android:textColor="@color/gray_btn"
+        android:textSize="@dimen/font_size_14" />
+
+
+    <Button
+        android:id="@+id/btn_join_in"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_image"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/bg_identity_submit_cornel"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="马上报名"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+</RelativeLayout>

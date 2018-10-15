@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-is\\values-is.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\values-is\\values-is.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\project\\SmartParkPeriod2\\trunk\\Src\\Android\\bluetown\\IMLib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-is\\values-is.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dafen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ff0aba893955f1b802cc293fcef060d2\\res\\values-is\\values-is.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

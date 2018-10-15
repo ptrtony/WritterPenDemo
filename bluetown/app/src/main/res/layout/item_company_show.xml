@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_5"
+    android:paddingLeft="@dimen/margin_10"
+    android:paddingRight="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_5" >
+
+    <com.android.bluetown.view.RoundAngleImageView
+        android:id="@+id/companyImg"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="@dimen/x10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20"
+            android:singleLine="true"
+            android:text="fjlkfjfslfs"
+            android:textColor="#555555"
+            android:textSize="@dimen/title_font_size_16" />
+
+        <TextView
+            android:id="@+id/companyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_22"
+            android:singleLine="true"
+            android:text="fjlkfjfslfs"
+            android:textColor="@color/color_949494"
+            android:drawableLeft="@drawable/location"
+            android:textSize="@dimen/font_size_12" />
+
+        <RelativeLayout
+            android:id="@+id/bottomLy"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/companyDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:singleLine="true"
+                android:textColor="@color/color_949494"
+                android:textSize="@dimen/font_size_10" />
+
+            <ImageView
+                android:id="@+id/likeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/like"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/companyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13245"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:textColor="@color/title_bg_blue"
+                android:textSize="@dimen/font_size_10"
+                android:background="@drawable/bg_identity_cornel"
+                android:layout_marginRight="@dimen/x10"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingTop="1px"
+                android:paddingBottom="1px"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

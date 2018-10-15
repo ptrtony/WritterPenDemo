@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_15"
+    android:paddingRight="@dimen/margin_15" >
+
+    <Button
+        android:layout_marginTop="@dimen/margin_30"
+        android:id="@+id/companyUser"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/company_user" 
+        android:textColor="@color/orange_darker_color"
+        android:textSize="@dimen/title_font_size_16"
+        android:background="@drawable/red_stroke_btn_bg"
+        android:layout_marginBottom="@dimen/margin_20"/>
+
+    <Button
+        android:id="@+id/normalUser"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/normal_user" 
+        android:textColor="@color/title_bg_blue"
+        android:textSize="@dimen/title_font_size_16"
+        android:background="@drawable/blue_stroke_btn_bg"
+        android:layout_marginBottom="@dimen/margin_20"
+        />
+
+    <Button
+        android:id="@+id/merchant"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/merchant"
+        android:textColor="@color/orange_darker_color"
+        android:textSize="@dimen/title_font_size_16"
+        android:background="@drawable/red_stroke_btn_bg"
+        android:visibility="gone"/>
+
+</LinearLayout>

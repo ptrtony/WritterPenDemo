@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_15" >
+
+    <EditText
+        android:id="@+id/companyLegalPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_50"
+        android:background="@null"
+        android:drawableBottom="@drawable/edittext_line"
+        android:drawableLeft="@drawable/ic_user_big"
+        android:drawablePadding="@dimen/margin_10"
+        android:hint="@string/company_legal_person_name"
+        android:paddingTop="@dimen/margin_10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+    <EditText
+        android:id="@+id/companyLinkMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@null"
+        android:drawableBottom="@drawable/edittext_line"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="@dimen/margin_10"
+        android:hint="@string/company_link_method"
+        android:paddingTop="@dimen/margin_10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+    <EditText
+        android:id="@+id/businessLicenseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@null"
+        android:drawableBottom="@drawable/edittext_line"
+        android:drawableLeft="@drawable/ic_business_num"
+        android:drawablePadding="@dimen/margin_10"
+        android:hint="@string/business_license_number"
+        android:inputType="number"
+        android:paddingTop="@dimen/margin_10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+    <EditText
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@null"
+        android:drawableBottom="@drawable/edittext_line"
+        android:drawableLeft="@drawable/ic_company_name"
+        android:drawablePadding="@dimen/margin_10"
+        android:hint="@string/company_name"
+        android:paddingTop="@dimen/margin_10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/company_user_tip_info"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:id="@+id/linkPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/link_phone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_12" />
+
+    <Button
+        android:id="@+id/companyUserCommit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_50"
+        android:background="@drawable/red_darker_btn_bg"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_font_size_16" />
+
+</LinearLayout>

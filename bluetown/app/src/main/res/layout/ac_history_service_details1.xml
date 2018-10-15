@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/authentication_bg"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/serviceDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_details"
+                    android:textColor="@color/font_orange"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/faultStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/serviceDetails"
+                    android:gravity="right"
+                    android:text="@string/un_deal_with"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FF9900"
+                android:padding="@dimen/margin_10" />
+
+            <TextView
+                android:id="@+id/faultServiceDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="2015-01-01"
+                android:textColor="@color/font_orange"
+                android:textSize="@dimen/font_size_14" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/serviceTypeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/self_service_type_title"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/serviceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/serviceTypeTitle"
+                    android:layout_toRightOf="@+id/serviceTypeTitle"
+                    android:gravity="center"
+                    android:text="1126648987"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/serviceDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_service_date"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/serviceDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/serviceDateTitle"
+                    android:layout_toRightOf="@+id/serviceDateTitle"
+                    android:gravity="center"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/serviceTimeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_service_time"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/serviceTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/serviceTimeTitle"
+                    android:layout_toRightOf="@+id/serviceTimeTitle"
+                    android:gravity="center"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/serviceAddressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/serviceAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/serviceAddressTitle"
+                    android:layout_toRightOf="@+id/serviceAddressTitle"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/servicePhoneTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_service_phone"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/servicePhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/servicePhoneTitle"
+                    android:layout_toRightOf="@+id/servicePhoneTitle"
+                    android:gravity="center"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/faultExplainTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fault_explain"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/faultExplain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/faultExplainTitle"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/faultImgTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fault_img"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/faultImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/faultImgTitle"
+                    android:layout_toRightOf="@+id/faultImgTitle"
+                    android:gravity="center"
+                    android:text="@string/dealed"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <com.android.bluetown.view.NoScrollGridView
+                    android:id="@+id/faultImgLy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/faultImgTitle"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/white_bg"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/margin_10"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/margin_10"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divide1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="30dip"
+                android:background="@color/font_gray"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/dealFeedbackLy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/dealFeedbackTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10"
+                    android:text="@string/deal_with_feedback"
+                    android:textColor="@color/app_blue"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/dealFeedbackDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dealFeedbackTitle"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/deal_with_date"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/dealFeedbackContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dealFeedbackTitle"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/feedback_content"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divide2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip"
+                android:background="@color/font_gray"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/handleScoreLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/handleScoreTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="@string/handle_score"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/font_size_14" />
+
+            <RadioGroup
+                android:id="@+id/handleScoreRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/handleScoreTitle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_15" >
+
+                <RadioButton
+                    android:id="@+id/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/orager_dian_radio_selector"
+                    android:checked="true"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/five_fen"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <RadioButton
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/orager_dian_radio_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/four_fen"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <RadioButton
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/orager_dian_radio_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/three_fen"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <RadioButton
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/orager_dian_radio_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/two_fen"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <RadioButton
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:button="@drawable/orager_dian_radio_selector"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/one_fen"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/dealCommit"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_30"
+            android:background="@drawable/blue_darker_btn_bg"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size_16"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

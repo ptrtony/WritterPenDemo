@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/item_canteen_type_selector"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_15" >
+
+    <ImageView
+        android:id="@+id/canteenImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/canteen_type_1" 
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/canteenTypeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:gravity="left"
+        android:text="美食"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_size_14"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>
