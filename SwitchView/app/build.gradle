@@ -17,13 +17,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://maven.google.com" }
+            maven { url "https://jitpack.io" }
+//            maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
+        }
+    }
+
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:27.+'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
 }
